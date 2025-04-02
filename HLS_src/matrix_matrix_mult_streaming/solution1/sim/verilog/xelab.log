@@ -1,0 +1,403 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_matrix_matrix_mult_streaming_top glbl -prj matrix_matrix_mult_streaming.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s matrix_matrix_mult_streaming -debug wave 
+Multi-threading is on. Using 14 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_axi_slave_CTRL_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CTRL_BUS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_20
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_automem_scores.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_scores
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_17.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_17
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming_mul_8s_8s_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_mul_8s_8s_16_1_1_Multiplier_0
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_mul_8s_8s_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_21
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_15
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_20
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_24
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrix_matrix_mult_streaming_top
+INFO: [VRFC 10-2458] undeclared symbol bramA_0_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1471]
+INFO: [VRFC 10-2458] undeclared symbol bramA_0_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1478]
+INFO: [VRFC 10-2458] undeclared symbol bramA_1_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1516]
+INFO: [VRFC 10-2458] undeclared symbol bramA_1_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1523]
+INFO: [VRFC 10-2458] undeclared symbol bramA_2_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1561]
+INFO: [VRFC 10-2458] undeclared symbol bramA_2_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1568]
+INFO: [VRFC 10-2458] undeclared symbol bramA_3_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1606]
+INFO: [VRFC 10-2458] undeclared symbol bramA_3_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1613]
+INFO: [VRFC 10-2458] undeclared symbol bramA_4_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1651]
+INFO: [VRFC 10-2458] undeclared symbol bramA_4_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1658]
+INFO: [VRFC 10-2458] undeclared symbol bramA_5_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1696]
+INFO: [VRFC 10-2458] undeclared symbol bramA_5_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1703]
+INFO: [VRFC 10-2458] undeclared symbol bramA_6_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1741]
+INFO: [VRFC 10-2458] undeclared symbol bramA_6_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1748]
+INFO: [VRFC 10-2458] undeclared symbol bramA_7_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1786]
+INFO: [VRFC 10-2458] undeclared symbol bramA_7_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1793]
+INFO: [VRFC 10-2458] undeclared symbol bramA_8_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1831]
+INFO: [VRFC 10-2458] undeclared symbol bramA_8_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1838]
+INFO: [VRFC 10-2458] undeclared symbol bramA_9_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1876]
+INFO: [VRFC 10-2458] undeclared symbol bramA_9_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1883]
+INFO: [VRFC 10-2458] undeclared symbol bramA_10_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1921]
+INFO: [VRFC 10-2458] undeclared symbol bramA_10_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1928]
+INFO: [VRFC 10-2458] undeclared symbol bramA_11_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1966]
+INFO: [VRFC 10-2458] undeclared symbol bramA_11_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:1973]
+INFO: [VRFC 10-2458] undeclared symbol bramA_12_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2011]
+INFO: [VRFC 10-2458] undeclared symbol bramA_12_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2018]
+INFO: [VRFC 10-2458] undeclared symbol bramA_13_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2056]
+INFO: [VRFC 10-2458] undeclared symbol bramA_13_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2063]
+INFO: [VRFC 10-2458] undeclared symbol bramA_14_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2101]
+INFO: [VRFC 10-2458] undeclared symbol bramA_14_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2108]
+INFO: [VRFC 10-2458] undeclared symbol bramA_15_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2146]
+INFO: [VRFC 10-2458] undeclared symbol bramA_15_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2153]
+INFO: [VRFC 10-2458] undeclared symbol bramA_16_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2191]
+INFO: [VRFC 10-2458] undeclared symbol bramA_16_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2198]
+INFO: [VRFC 10-2458] undeclared symbol bramA_17_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2236]
+INFO: [VRFC 10-2458] undeclared symbol bramA_17_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2243]
+INFO: [VRFC 10-2458] undeclared symbol bramA_18_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2281]
+INFO: [VRFC 10-2458] undeclared symbol bramA_18_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2288]
+INFO: [VRFC 10-2458] undeclared symbol bramA_19_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2326]
+INFO: [VRFC 10-2458] undeclared symbol bramA_19_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2333]
+INFO: [VRFC 10-2458] undeclared symbol bramA_20_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2371]
+INFO: [VRFC 10-2458] undeclared symbol bramA_20_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2378]
+INFO: [VRFC 10-2458] undeclared symbol bramA_21_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2416]
+INFO: [VRFC 10-2458] undeclared symbol bramA_21_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2423]
+INFO: [VRFC 10-2458] undeclared symbol bramA_22_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2461]
+INFO: [VRFC 10-2458] undeclared symbol bramA_22_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2468]
+INFO: [VRFC 10-2458] undeclared symbol bramA_23_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2506]
+INFO: [VRFC 10-2458] undeclared symbol bramA_23_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2513]
+INFO: [VRFC 10-2458] undeclared symbol bramA_24_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2551]
+INFO: [VRFC 10-2458] undeclared symbol bramA_24_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2558]
+INFO: [VRFC 10-2458] undeclared symbol bramA_25_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2596]
+INFO: [VRFC 10-2458] undeclared symbol bramA_25_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2603]
+INFO: [VRFC 10-2458] undeclared symbol bramA_26_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2641]
+INFO: [VRFC 10-2458] undeclared symbol bramA_26_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2648]
+INFO: [VRFC 10-2458] undeclared symbol bramA_27_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2686]
+INFO: [VRFC 10-2458] undeclared symbol bramA_27_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2693]
+INFO: [VRFC 10-2458] undeclared symbol bramA_28_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2731]
+INFO: [VRFC 10-2458] undeclared symbol bramA_28_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2738]
+INFO: [VRFC 10-2458] undeclared symbol bramA_29_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2776]
+INFO: [VRFC 10-2458] undeclared symbol bramA_29_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2783]
+INFO: [VRFC 10-2458] undeclared symbol bramA_30_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2821]
+INFO: [VRFC 10-2458] undeclared symbol bramA_30_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2828]
+INFO: [VRFC 10-2458] undeclared symbol bramA_31_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2866]
+INFO: [VRFC 10-2458] undeclared symbol bramA_31_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2873]
+INFO: [VRFC 10-2458] undeclared symbol bramB_0_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2911]
+INFO: [VRFC 10-2458] undeclared symbol bramB_0_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2918]
+INFO: [VRFC 10-2458] undeclared symbol bramB_1_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2956]
+INFO: [VRFC 10-2458] undeclared symbol bramB_1_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:2963]
+INFO: [VRFC 10-2458] undeclared symbol bramB_2_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3001]
+INFO: [VRFC 10-2458] undeclared symbol bramB_2_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3008]
+INFO: [VRFC 10-2458] undeclared symbol bramB_3_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3046]
+INFO: [VRFC 10-2458] undeclared symbol bramB_3_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3053]
+INFO: [VRFC 10-2458] undeclared symbol bramB_4_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3091]
+INFO: [VRFC 10-2458] undeclared symbol bramB_4_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3098]
+INFO: [VRFC 10-2458] undeclared symbol bramB_5_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3136]
+INFO: [VRFC 10-2458] undeclared symbol bramB_5_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3143]
+INFO: [VRFC 10-2458] undeclared symbol bramB_6_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3181]
+INFO: [VRFC 10-2458] undeclared symbol bramB_6_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3188]
+INFO: [VRFC 10-2458] undeclared symbol bramB_7_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3226]
+INFO: [VRFC 10-2458] undeclared symbol bramB_7_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3233]
+INFO: [VRFC 10-2458] undeclared symbol bramB_8_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3271]
+INFO: [VRFC 10-2458] undeclared symbol bramB_8_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3278]
+INFO: [VRFC 10-2458] undeclared symbol bramB_9_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3316]
+INFO: [VRFC 10-2458] undeclared symbol bramB_9_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3323]
+INFO: [VRFC 10-2458] undeclared symbol bramB_10_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3361]
+INFO: [VRFC 10-2458] undeclared symbol bramB_10_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3368]
+INFO: [VRFC 10-2458] undeclared symbol bramB_11_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3406]
+INFO: [VRFC 10-2458] undeclared symbol bramB_11_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3413]
+INFO: [VRFC 10-2458] undeclared symbol bramB_12_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3451]
+INFO: [VRFC 10-2458] undeclared symbol bramB_12_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3458]
+INFO: [VRFC 10-2458] undeclared symbol bramB_13_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3496]
+INFO: [VRFC 10-2458] undeclared symbol bramB_13_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3503]
+INFO: [VRFC 10-2458] undeclared symbol bramB_14_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3541]
+INFO: [VRFC 10-2458] undeclared symbol bramB_14_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3548]
+INFO: [VRFC 10-2458] undeclared symbol bramB_15_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3586]
+INFO: [VRFC 10-2458] undeclared symbol bramB_15_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3593]
+INFO: [VRFC 10-2458] undeclared symbol bramB_16_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3631]
+INFO: [VRFC 10-2458] undeclared symbol bramB_16_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3638]
+INFO: [VRFC 10-2458] undeclared symbol bramB_17_Rst_A, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3676]
+INFO: [VRFC 10-2458] undeclared symbol bramB_17_Rst_B, assumed default net type wire [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming.autotb.v:3683]
+INFO: [Common 17-14] Message 'VRFC 10-2458' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_axi_s_feature_vector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_feature_vector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_24
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_17.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_17
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming_CTRL_BUS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_CTRL_BUS_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_11
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_15
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_13
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_25.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_25
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_14
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming_mac_muladd_8s_8s_9s_16_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_mac_muladd_8s_8s_9s_16_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_mac_muladd_8s_8s_9s_16_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_29
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_18.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_18
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_14
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_28
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_29
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_18.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_18
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_26
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_27.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_27
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_13
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming_compute_scores_fv_data_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_compute_scores_fv_data_V_ram
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_compute_scores_fv_data_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_22.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_22
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming_compute_weights_with_matrix_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_compute_weights_with_matrix_mult
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_31.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_31
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming_W_V_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_W_V_0_ram
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_W_V_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_30
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming_compute_biases_with_multiple_dot_products.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_compute_biases_with_multiple_dot_products
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_23.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_23
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_23.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_23
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_26
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_regslice_both
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_30
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_11
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_19.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_19
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_25.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_25
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming_mac_muladd_8s_8s_16ns_16_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_mac_muladd_8s_8s_16ns_16_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming_mac_muladd_8s_8s_16s_17_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_mac_muladd_8s_8s_16s_17_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_mac_muladd_8s_8s_16s_17_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_31.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_31
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/matrix_matrix_mult_streaming_compute_scores.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_matrix_mult_streaming_compute_scores
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_28
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_27.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_27
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_19.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_19
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_22.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_22
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_A_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_A_21
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/AESL_autobram_B_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_B_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [df_fifo_interface.sv:4]
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [nodf_module_interface.sv:4]
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/verilog/df_process_interface.sv:4]
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_W_V...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_W_V...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_CTR...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_mul...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_mul...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_mac...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_mac...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_com...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_com...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_com...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_mac...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_mac...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_mac...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_mac...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_com...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_com...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_reg...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_reg...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_reg...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_reg...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_reg...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming_reg...
+Compiling module xil_defaultlib.matrix_matrix_mult_streaming
+Compiling module xil_defaultlib.AESL_autobram_A_0
+Compiling module xil_defaultlib.AESL_autobram_A_1
+Compiling module xil_defaultlib.AESL_autobram_A_2
+Compiling module xil_defaultlib.AESL_autobram_A_3
+Compiling module xil_defaultlib.AESL_autobram_A_4
+Compiling module xil_defaultlib.AESL_autobram_A_5
+Compiling module xil_defaultlib.AESL_autobram_A_6
+Compiling module xil_defaultlib.AESL_autobram_A_7
+Compiling module xil_defaultlib.AESL_autobram_A_8
+Compiling module xil_defaultlib.AESL_autobram_A_9
+Compiling module xil_defaultlib.AESL_autobram_A_10
+Compiling module xil_defaultlib.AESL_autobram_A_11
+Compiling module xil_defaultlib.AESL_autobram_A_12
+Compiling module xil_defaultlib.AESL_autobram_A_13
+Compiling module xil_defaultlib.AESL_autobram_A_14
+Compiling module xil_defaultlib.AESL_autobram_A_15
+Compiling module xil_defaultlib.AESL_autobram_A_16
+Compiling module xil_defaultlib.AESL_autobram_A_17
+Compiling module xil_defaultlib.AESL_autobram_A_18
+Compiling module xil_defaultlib.AESL_autobram_A_19
+Compiling module xil_defaultlib.AESL_autobram_A_20
+Compiling module xil_defaultlib.AESL_autobram_A_21
+Compiling module xil_defaultlib.AESL_autobram_A_22
+Compiling module xil_defaultlib.AESL_autobram_A_23
+Compiling module xil_defaultlib.AESL_autobram_A_24
+Compiling module xil_defaultlib.AESL_autobram_A_25
+Compiling module xil_defaultlib.AESL_autobram_A_26
+Compiling module xil_defaultlib.AESL_autobram_A_27
+Compiling module xil_defaultlib.AESL_autobram_A_28
+Compiling module xil_defaultlib.AESL_autobram_A_29
+Compiling module xil_defaultlib.AESL_autobram_A_30
+Compiling module xil_defaultlib.AESL_autobram_A_31
+Compiling module xil_defaultlib.AESL_autobram_B_0
+Compiling module xil_defaultlib.AESL_autobram_B_1
+Compiling module xil_defaultlib.AESL_autobram_B_2
+Compiling module xil_defaultlib.AESL_autobram_B_3
+Compiling module xil_defaultlib.AESL_autobram_B_4
+Compiling module xil_defaultlib.AESL_autobram_B_5
+Compiling module xil_defaultlib.AESL_autobram_B_6
+Compiling module xil_defaultlib.AESL_autobram_B_7
+Compiling module xil_defaultlib.AESL_autobram_B_8
+Compiling module xil_defaultlib.AESL_autobram_B_9
+Compiling module xil_defaultlib.AESL_autobram_B_10
+Compiling module xil_defaultlib.AESL_autobram_B_11
+Compiling module xil_defaultlib.AESL_autobram_B_12
+Compiling module xil_defaultlib.AESL_autobram_B_13
+Compiling module xil_defaultlib.AESL_autobram_B_14
+Compiling module xil_defaultlib.AESL_autobram_B_15
+Compiling module xil_defaultlib.AESL_autobram_B_16
+Compiling module xil_defaultlib.AESL_autobram_B_17
+Compiling module xil_defaultlib.AESL_autobram_B_18
+Compiling module xil_defaultlib.AESL_autobram_B_19
+Compiling module xil_defaultlib.AESL_autobram_B_20
+Compiling module xil_defaultlib.AESL_autobram_B_21
+Compiling module xil_defaultlib.AESL_autobram_B_22
+Compiling module xil_defaultlib.AESL_autobram_B_23
+Compiling module xil_defaultlib.AESL_autobram_B_24
+Compiling module xil_defaultlib.AESL_autobram_B_25
+Compiling module xil_defaultlib.AESL_autobram_B_26
+Compiling module xil_defaultlib.AESL_autobram_B_27
+Compiling module xil_defaultlib.AESL_autobram_B_28
+Compiling module xil_defaultlib.AESL_autobram_B_29
+Compiling module xil_defaultlib.AESL_autobram_B_30
+Compiling module xil_defaultlib.AESL_autobram_B_31
+Compiling module xil_defaultlib.AESL_automem_scores
+Compiling module xil_defaultlib.fifo(DEPTH=32,WIDTH=128)
+Compiling module xil_defaultlib.fifo(DEPTH=32,WIDTH=16)
+Compiling module xil_defaultlib.fifo(DEPTH=32,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=32,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=32,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=32,WIDTH=6)
+Compiling module xil_defaultlib.AESL_axi_s_feature_vector
+Compiling module xil_defaultlib.AESL_axi_slave_CTRL_BUS
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_matrix_matrix_mult_streami...
+Compiling module work.glbl
+Built simulation snapshot matrix_matrix_mult_streaming

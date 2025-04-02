@@ -1,0 +1,500 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'SLDA_final'" level="0">
+<item name = "Date">Sun Sep 10 13:55:32 2023
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
+<item name = "Project">SLDA_final</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.971 ns, 1.00 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1512, 5610, 15.120 us, 56.100 us, 784, 4827, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="SLDA_update_U0">SLDA_update, 783, 783, 7.830 us, 7.830 us, 783, 783, none</column>
+<column name="Block_split2_proc_U0">Block_split2_proc, 728, 4826, 7.280 us, 48.260 us, 728, 4826, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 272, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">5, 0, 6471, 40145, -</column>
+<column name="Memory">0, -, 512, 512, -</column>
+<column name="Multiplexer">-, -, -, 594, -</column>
+<column name="Register">-, -, 66, -, -</column>
+<specialColumn name="Available">1824, 2520, 548160, 274080, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, 1, 15, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="Block_split2_proc_U0">Block_split2_proc, 4, 0, 1498, 2382, 0</column>
+<column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 226, 360, 0</column>
+<column name="SLDA_update_U0">SLDA_update, 1, 0, 4747, 37403, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="lambda_V_0_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_1_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_2_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_3_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_4_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_5_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_6_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_7_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_8_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_9_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_10_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_11_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_12_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_13_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_14_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_15_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_16_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_17_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_18_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_19_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_20_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_21_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_22_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_23_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_24_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_25_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_26_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_27_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_28_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_29_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_30_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_31_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_32_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_33_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_34_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_35_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_36_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_37_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_38_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_39_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_40_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_41_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_42_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_43_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_44_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_45_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_46_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_47_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_48_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_49_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_50_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_51_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_52_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_53_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_54_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_55_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_56_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_57_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_58_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_59_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_60_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_61_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_62_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+<column name="lambda_V_63_U">lambda_V_0, 0, 8, 8, 0, 64, 4, 1, 256</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="Block_split2_proc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Block_split2_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="SLDA_update_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_0">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_10">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_11">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_12">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_13">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_14">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_15">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_16">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_17">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_18">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_19">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_20">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_21">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_22">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_23">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_24">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_25">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_26">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_27">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_28">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_29">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_3">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_30">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_31">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_32">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_33">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_34">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_35">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_36">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_37">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_38">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_39">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_4">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_40">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_41">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_42">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_43">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_44">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_45">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_46">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_47">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_48">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_49">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_5">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_50">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_51">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_52">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_53">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_54">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_55">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_56">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_57">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_58">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_59">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_6">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_60">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_61">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_62">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_63">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_7">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_8">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_lambda_V_9">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Block_split2_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_SLDA_update_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_0">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_10">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_11">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_12">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_13">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_14">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_15">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_16">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_17">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_18">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_19">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_2">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_20">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_21">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_22">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_23">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_24">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_25">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_26">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_27">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_28">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_29">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_3">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_30">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_31">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_32">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_33">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_34">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_35">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_36">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_37">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_38">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_39">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_4">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_40">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_41">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_42">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_43">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_44">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_45">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_46">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_47">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_48">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_49">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_5">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_50">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_51">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_52">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_53">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_54">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_55">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_56">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_57">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_58">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_59">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_6">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_60">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_61">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_62">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_63">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_7">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_8">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_lambda_V_9">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_Block_split2_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_SLDA_update_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_0">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_1">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_10">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_11">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_12">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_13">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_14">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_15">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_16">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_17">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_18">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_19">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_2">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_20">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_21">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_22">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_23">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_24">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_25">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_26">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_27">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_28">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_29">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_3">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_30">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_31">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_32">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_33">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_34">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_35">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_36">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_37">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_38">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_39">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_4">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_40">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_41">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_42">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_43">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_44">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_45">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_46">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_47">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_48">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_49">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_5">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_50">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_51">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_52">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_53">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_54">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_55">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_56">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_57">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_58">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_59">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_6">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_60">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_61">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_62">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_63">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_7">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_8">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_lambda_V_9">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_Block_split2_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_SLDA_update_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_0">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_1">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_10">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_11">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_12">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_13">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_14">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_15">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_16">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_17">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_18">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_19">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_2">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_20">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_21">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_22">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_23">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_24">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_25">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_26">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_27">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_28">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_29">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_3">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_30">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_31">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_32">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_33">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_34">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_35">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_36">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_37">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_38">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_39">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_4">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_40">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_41">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_42">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_43">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_44">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_45">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_46">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_47">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_48">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_49">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_5">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_50">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_51">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_52">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_53">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_54">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_55">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_56">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_57">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_58">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_59">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_6">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_60">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_61">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_62">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_63">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_7">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_8">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_lambda_V_9">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CTRL_AWVALID">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_AWREADY">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_AWADDR">in, 6, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WVALID">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WREADY">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WDATA">in, 32, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WSTRB">in, 4, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_ARVALID">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_ARREADY">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_ARADDR">in, 6, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RVALID">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RREADY">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RDATA">out, 32, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RRESP">out, 2, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_BVALID">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_BREADY">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_BRESP">out, 2, s_axi, CTRL, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, SLDA_final, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, SLDA_final, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, SLDA_final, return value</column>
+<column name="mu_in_TDATA">in, 128, axis, mu_in_V_data_V, pointer</column>
+<column name="mu_in_TKEEP">in, 16, axis, mu_in_V_keep_V, pointer</column>
+<column name="mu_in_TSTRB">in, 16, axis, mu_in_V_strb_V, pointer</column>
+<column name="mu_in_TUSER">in, 2, axis, mu_in_V_user_V, pointer</column>
+<column name="mu_in_TLAST">in, 1, axis, mu_in_V_last_V, pointer</column>
+<column name="mu_in_TID">in, 5, axis, mu_in_V_id_V, pointer</column>
+<column name="mu_in_TDEST">in, 6, axis, mu_in_V_dest_V, pointer</column>
+<column name="mu_in_TVALID">in, 1, axis, mu_in_V_dest_V, pointer</column>
+<column name="mu_in_TREADY">out, 1, axis, mu_in_V_dest_V, pointer</column>
+<column name="feature_vector1_TDATA">in, 128, axis, feature_vector1_V_data_V, pointer</column>
+<column name="feature_vector1_TKEEP">in, 16, axis, feature_vector1_V_keep_V, pointer</column>
+<column name="feature_vector1_TSTRB">in, 16, axis, feature_vector1_V_strb_V, pointer</column>
+<column name="feature_vector1_TUSER">in, 2, axis, feature_vector1_V_user_V, pointer</column>
+<column name="feature_vector1_TLAST">in, 1, axis, feature_vector1_V_last_V, pointer</column>
+<column name="feature_vector1_TID">in, 5, axis, feature_vector1_V_id_V, pointer</column>
+<column name="feature_vector1_TDEST">in, 6, axis, feature_vector1_V_dest_V, pointer</column>
+<column name="feature_vector1_TVALID">in, 1, axis, feature_vector1_V_dest_V, pointer</column>
+<column name="feature_vector1_TREADY">out, 1, axis, feature_vector1_V_dest_V, pointer</column>
+<column name="feature_vector2_TDATA">in, 128, axis, feature_vector2_V_data_V, pointer</column>
+<column name="feature_vector2_TKEEP">in, 16, axis, feature_vector2_V_keep_V, pointer</column>
+<column name="feature_vector2_TSTRB">in, 16, axis, feature_vector2_V_strb_V, pointer</column>
+<column name="feature_vector2_TUSER">in, 2, axis, feature_vector2_V_user_V, pointer</column>
+<column name="feature_vector2_TLAST">in, 1, axis, feature_vector2_V_last_V, pointer</column>
+<column name="feature_vector2_TID">in, 5, axis, feature_vector2_V_id_V, pointer</column>
+<column name="feature_vector2_TDEST">in, 6, axis, feature_vector2_V_dest_V, pointer</column>
+<column name="feature_vector2_TVALID">in, 1, axis, feature_vector2_V_dest_V, pointer</column>
+<column name="feature_vector2_TREADY">out, 1, axis, feature_vector2_V_dest_V, pointer</column>
+<column name="Lambda_TDATA">in, 128, axis, Lambda_V_data_V, pointer</column>
+<column name="Lambda_TKEEP">in, 16, axis, Lambda_V_keep_V, pointer</column>
+<column name="Lambda_TSTRB">in, 16, axis, Lambda_V_strb_V, pointer</column>
+<column name="Lambda_TUSER">in, 2, axis, Lambda_V_user_V, pointer</column>
+<column name="Lambda_TLAST">in, 1, axis, Lambda_V_last_V, pointer</column>
+<column name="Lambda_TID">in, 5, axis, Lambda_V_id_V, pointer</column>
+<column name="Lambda_TDEST">in, 6, axis, Lambda_V_dest_V, pointer</column>
+<column name="Lambda_TVALID">in, 1, axis, Lambda_V_dest_V, pointer</column>
+<column name="Lambda_TREADY">out, 1, axis, Lambda_V_dest_V, pointer</column>
+<column name="scores_Addr_A">out, 32, bram, scores, array</column>
+<column name="scores_EN_A">out, 1, bram, scores, array</column>
+<column name="scores_Din_A">out, 32, bram, scores, array</column>
+<column name="scores_Dout_A">in, 32, bram, scores, array</column>
+<column name="scores_WEN_A">out, 4, bram, scores, array</column>
+<column name="scores_Clk_A">out, 1, bram, scores, array</column>
+<column name="scores_Rst_A">out, 1, bram, scores, array</column>
+</table>
+</item>
+</section>
+</profile>

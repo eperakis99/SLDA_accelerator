@@ -1,0 +1,227 @@
+
+
+================================================================
+== Vitis HLS Report for 'vector_add2'
+================================================================
+* Date:           Wed May  3 16:43:47 2023
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        vec_vec_op_streaming
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  0.765 ns|     1.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- BLOCK_CACHE_LOOP  |        3|        3|         2|          1|          1|     3|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 4 3 
+3 --> 2 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.42>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i6 %vec_out_V_dest_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %vec_out_V_id_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %vec_out_V_last_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i2 %vec_out_V_user_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %vec_out_V_strb_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %vec_out_V_keep_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %vec_out_V_data_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i6 %vec2_V_dest_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %vec2_V_id_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %vec2_V_last_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i2 %vec2_V_user_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %vec2_V_strb_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %vec2_V_keep_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %vec2_V_data_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i6 %vec1_V_dest_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %vec1_V_id_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %vec1_V_last_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i2 %vec1_V_user_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %vec1_V_strb_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %vec1_V_keep_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %vec1_V_data_V, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.42ns)   --->   "%br_ln118 = br void" [vec_vec_op_streaming.cpp:118]   --->   Operation 26 'br' 'br_ln118' <Predicate = true> <Delay = 0.42>
+
+State 2 <SV = 1> <Delay = 0.76>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%j = phi i2 %add_ln118, void %.split2, i2 0, void" [vec_vec_op_streaming.cpp:118]   --->   Operation 27 'phi' 'j' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.54ns)   --->   "%add_ln118 = add i2 %j, i2 1" [vec_vec_op_streaming.cpp:118]   --->   Operation 28 'add' 'add_ln118' <Predicate = true> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.44ns)   --->   "%icmp_ln118 = icmp_eq  i2 %j, i2 3" [vec_vec_op_streaming.cpp:118]   --->   Operation 29 'icmp' 'icmp_ln118' <Predicate = true> <Delay = 0.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 30 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln118 = br i1 %icmp_ln118, void %.split2, void" [vec_vec_op_streaming.cpp:118]   --->   Operation 31 'br' 'br_ln118' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%empty_17 = read i174 @_ssdm_op_Read.axis.volatile.i128P0A.i16P0A.i16P0A.i2P0A.i1P0A.i5P0A.i6P0A, i128 %vec1_V_data_V, i16 %vec1_V_keep_V, i16 %vec1_V_strb_V, i2 %vec1_V_user_V, i1 %vec1_V_last_V, i5 %vec1_V_id_V, i6 %vec1_V_dest_V"   --->   Operation 32 'read' 'empty_17' <Predicate = (!icmp_ln118)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%ref_tmp_data = extractvalue i174 %empty_17"   --->   Operation 33 'extractvalue' 'ref_tmp_data' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%ref_tmp_keep = extractvalue i174 %empty_17"   --->   Operation 34 'extractvalue' 'ref_tmp_keep' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%ref_tmp_strb = extractvalue i174 %empty_17"   --->   Operation 35 'extractvalue' 'ref_tmp_strb' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%ref_tmp_user = extractvalue i174 %empty_17"   --->   Operation 36 'extractvalue' 'ref_tmp_user' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%ref_tmp_last = extractvalue i174 %empty_17"   --->   Operation 37 'extractvalue' 'ref_tmp_last' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%ref_tmp_id = extractvalue i174 %empty_17"   --->   Operation 38 'extractvalue' 'ref_tmp_id' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%ref_tmp_dest = extractvalue i174 %empty_17"   --->   Operation 39 'extractvalue' 'ref_tmp_dest' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%trunc_ln120 = trunc i128 %ref_tmp_data" [vec_vec_op_streaming.cpp:120]   --->   Operation 40 'trunc' 'trunc_ln120' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%trunc_ln120_1 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 8, i32 15" [vec_vec_op_streaming.cpp:120]   --->   Operation 41 'partselect' 'trunc_ln120_1' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%trunc_ln120_2 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 16, i32 23" [vec_vec_op_streaming.cpp:120]   --->   Operation 42 'partselect' 'trunc_ln120_2' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%trunc_ln120_3 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 24, i32 31" [vec_vec_op_streaming.cpp:120]   --->   Operation 43 'partselect' 'trunc_ln120_3' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%trunc_ln120_4 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 32, i32 39" [vec_vec_op_streaming.cpp:120]   --->   Operation 44 'partselect' 'trunc_ln120_4' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%trunc_ln120_5 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 40, i32 47" [vec_vec_op_streaming.cpp:120]   --->   Operation 45 'partselect' 'trunc_ln120_5' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%trunc_ln120_6 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 48, i32 55" [vec_vec_op_streaming.cpp:120]   --->   Operation 46 'partselect' 'trunc_ln120_6' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%trunc_ln120_7 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 56, i32 63" [vec_vec_op_streaming.cpp:120]   --->   Operation 47 'partselect' 'trunc_ln120_7' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%trunc_ln120_8 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 64, i32 71" [vec_vec_op_streaming.cpp:120]   --->   Operation 48 'partselect' 'trunc_ln120_8' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%trunc_ln120_9 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 72, i32 79" [vec_vec_op_streaming.cpp:120]   --->   Operation 49 'partselect' 'trunc_ln120_9' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%trunc_ln120_s = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 80, i32 87" [vec_vec_op_streaming.cpp:120]   --->   Operation 50 'partselect' 'trunc_ln120_s' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%trunc_ln120_10 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 88, i32 95" [vec_vec_op_streaming.cpp:120]   --->   Operation 51 'partselect' 'trunc_ln120_10' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%trunc_ln120_11 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 96, i32 103" [vec_vec_op_streaming.cpp:120]   --->   Operation 52 'partselect' 'trunc_ln120_11' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%trunc_ln120_12 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 104, i32 111" [vec_vec_op_streaming.cpp:120]   --->   Operation 53 'partselect' 'trunc_ln120_12' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%trunc_ln120_13 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 112, i32 119" [vec_vec_op_streaming.cpp:120]   --->   Operation 54 'partselect' 'trunc_ln120_13' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%trunc_ln120_14 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp_data, i32 120, i32 127" [vec_vec_op_streaming.cpp:120]   --->   Operation 55 'partselect' 'trunc_ln120_14' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%empty_18 = read i174 @_ssdm_op_Read.axis.volatile.i128P0A.i16P0A.i16P0A.i2P0A.i1P0A.i5P0A.i6P0A, i128 %vec2_V_data_V, i16 %vec2_V_keep_V, i16 %vec2_V_strb_V, i2 %vec2_V_user_V, i1 %vec2_V_last_V, i5 %vec2_V_id_V, i6 %vec2_V_dest_V"   --->   Operation 56 'read' 'empty_18' <Predicate = (!icmp_ln118)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%ref_tmp23_data = extractvalue i174 %empty_18"   --->   Operation 57 'extractvalue' 'ref_tmp23_data' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%trunc_ln121 = trunc i128 %ref_tmp23_data" [vec_vec_op_streaming.cpp:121]   --->   Operation 58 'trunc' 'trunc_ln121' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%trunc_ln121_1 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 8, i32 15" [vec_vec_op_streaming.cpp:121]   --->   Operation 59 'partselect' 'trunc_ln121_1' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%trunc_ln121_2 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 16, i32 23" [vec_vec_op_streaming.cpp:121]   --->   Operation 60 'partselect' 'trunc_ln121_2' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%trunc_ln121_3 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 24, i32 31" [vec_vec_op_streaming.cpp:121]   --->   Operation 61 'partselect' 'trunc_ln121_3' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%trunc_ln121_4 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 32, i32 39" [vec_vec_op_streaming.cpp:121]   --->   Operation 62 'partselect' 'trunc_ln121_4' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%trunc_ln121_5 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 40, i32 47" [vec_vec_op_streaming.cpp:121]   --->   Operation 63 'partselect' 'trunc_ln121_5' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%trunc_ln121_6 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 48, i32 55" [vec_vec_op_streaming.cpp:121]   --->   Operation 64 'partselect' 'trunc_ln121_6' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%trunc_ln121_7 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 56, i32 63" [vec_vec_op_streaming.cpp:121]   --->   Operation 65 'partselect' 'trunc_ln121_7' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%trunc_ln121_8 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 64, i32 71" [vec_vec_op_streaming.cpp:121]   --->   Operation 66 'partselect' 'trunc_ln121_8' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%trunc_ln121_9 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 72, i32 79" [vec_vec_op_streaming.cpp:121]   --->   Operation 67 'partselect' 'trunc_ln121_9' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%trunc_ln121_s = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 80, i32 87" [vec_vec_op_streaming.cpp:121]   --->   Operation 68 'partselect' 'trunc_ln121_s' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%trunc_ln121_10 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 88, i32 95" [vec_vec_op_streaming.cpp:121]   --->   Operation 69 'partselect' 'trunc_ln121_10' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%trunc_ln121_11 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 96, i32 103" [vec_vec_op_streaming.cpp:121]   --->   Operation 70 'partselect' 'trunc_ln121_11' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%trunc_ln121_12 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 104, i32 111" [vec_vec_op_streaming.cpp:121]   --->   Operation 71 'partselect' 'trunc_ln121_12' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%trunc_ln121_13 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 112, i32 119" [vec_vec_op_streaming.cpp:121]   --->   Operation 72 'partselect' 'trunc_ln121_13' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%trunc_ln121_14 = partselect i8 @_ssdm_op_PartSelect.i8.i128.i32.i32, i128 %ref_tmp23_data, i32 120, i32 127" [vec_vec_op_streaming.cpp:121]   --->   Operation 73 'partselect' 'trunc_ln121_14' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_2 : Operation 74 [1/1] (0.76ns)   --->   "%add_ln126 = add i8 %trunc_ln120, i8 %trunc_ln121" [vec_vec_op_streaming.cpp:126]   --->   Operation 74 'add' 'add_ln126' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 75 [1/1] (0.76ns)   --->   "%add_ln126_1 = add i8 %trunc_ln120_1, i8 %trunc_ln121_1" [vec_vec_op_streaming.cpp:126]   --->   Operation 75 'add' 'add_ln126_1' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 76 [1/1] (0.76ns)   --->   "%add_ln126_2 = add i8 %trunc_ln120_2, i8 %trunc_ln121_2" [vec_vec_op_streaming.cpp:126]   --->   Operation 76 'add' 'add_ln126_2' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 77 [1/1] (0.76ns)   --->   "%add_ln126_3 = add i8 %trunc_ln120_3, i8 %trunc_ln121_3" [vec_vec_op_streaming.cpp:126]   --->   Operation 77 'add' 'add_ln126_3' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 78 [1/1] (0.76ns)   --->   "%add_ln126_4 = add i8 %trunc_ln120_4, i8 %trunc_ln121_4" [vec_vec_op_streaming.cpp:126]   --->   Operation 78 'add' 'add_ln126_4' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 79 [1/1] (0.76ns)   --->   "%add_ln126_5 = add i8 %trunc_ln120_5, i8 %trunc_ln121_5" [vec_vec_op_streaming.cpp:126]   --->   Operation 79 'add' 'add_ln126_5' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 80 [1/1] (0.76ns)   --->   "%add_ln126_6 = add i8 %trunc_ln120_6, i8 %trunc_ln121_6" [vec_vec_op_streaming.cpp:126]   --->   Operation 80 'add' 'add_ln126_6' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 81 [1/1] (0.76ns)   --->   "%add_ln126_7 = add i8 %trunc_ln120_7, i8 %trunc_ln121_7" [vec_vec_op_streaming.cpp:126]   --->   Operation 81 'add' 'add_ln126_7' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 82 [1/1] (0.76ns)   --->   "%add_ln126_8 = add i8 %trunc_ln120_8, i8 %trunc_ln121_8" [vec_vec_op_streaming.cpp:126]   --->   Operation 82 'add' 'add_ln126_8' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 83 [1/1] (0.76ns)   --->   "%add_ln126_9 = add i8 %trunc_ln120_9, i8 %trunc_ln121_9" [vec_vec_op_streaming.cpp:126]   --->   Operation 83 'add' 'add_ln126_9' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 84 [1/1] (0.76ns)   --->   "%add_ln126_10 = add i8 %trunc_ln120_s, i8 %trunc_ln121_s" [vec_vec_op_streaming.cpp:126]   --->   Operation 84 'add' 'add_ln126_10' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 85 [1/1] (0.76ns)   --->   "%add_ln126_11 = add i8 %trunc_ln120_10, i8 %trunc_ln121_10" [vec_vec_op_streaming.cpp:126]   --->   Operation 85 'add' 'add_ln126_11' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 86 [1/1] (0.76ns)   --->   "%add_ln126_12 = add i8 %trunc_ln120_11, i8 %trunc_ln121_11" [vec_vec_op_streaming.cpp:126]   --->   Operation 86 'add' 'add_ln126_12' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 87 [1/1] (0.76ns)   --->   "%add_ln126_13 = add i8 %trunc_ln120_12, i8 %trunc_ln121_12" [vec_vec_op_streaming.cpp:126]   --->   Operation 87 'add' 'add_ln126_13' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 88 [1/1] (0.76ns)   --->   "%add_ln126_14 = add i8 %trunc_ln120_13, i8 %trunc_ln121_13" [vec_vec_op_streaming.cpp:126]   --->   Operation 88 'add' 'add_ln126_14' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 89 [1/1] (0.76ns)   --->   "%add_ln126_15 = add i8 %trunc_ln120_14, i8 %trunc_ln121_14" [vec_vec_op_streaming.cpp:126]   --->   Operation 89 'add' 'add_ln126_15' <Predicate = (!icmp_ln118)> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0"   --->   Operation 90 'specpipeline' 'specpipeline_ln0' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7"   --->   Operation 91 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%or_ln308_s = bitconcatenate i128 @_ssdm_op_BitConcatenate.i128.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8, i8 %add_ln126_15, i8 %add_ln126_14, i8 %add_ln126_13, i8 %add_ln126_12, i8 %add_ln126_11, i8 %add_ln126_10, i8 %add_ln126_9, i8 %add_ln126_8, i8 %add_ln126_7, i8 %add_ln126_6, i8 %add_ln126_5, i8 %add_ln126_4, i8 %add_ln126_3, i8 %add_ln126_2, i8 %add_ln126_1, i8 %add_ln126"   --->   Operation 92 'bitconcatenate' 'or_ln308_s' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%write_ln309 = write void @_ssdm_op_Write.axis.volatile.i128P0A.i16P0A.i16P0A.i2P0A.i1P0A.i5P0A.i6P0A, i128 %vec_out_V_data_V, i16 %vec_out_V_keep_V, i16 %vec_out_V_strb_V, i2 %vec_out_V_user_V, i1 %vec_out_V_last_V, i5 %vec_out_V_id_V, i6 %vec_out_V_dest_V, i128 %or_ln308_s, i16 %ref_tmp_keep, i16 %ref_tmp_strb, i2 %ref_tmp_user, i1 %ref_tmp_last, i5 %ref_tmp_id, i6 %ref_tmp_dest"   --->   Operation 93 'write' 'write_ln309' <Predicate = (!icmp_ln118)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 94 'br' 'br_ln0' <Predicate = (!icmp_ln118)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 95 [1/1] (0.00ns)   --->   "%ret_ln141 = ret" [vec_vec_op_streaming.cpp:141]   --->   Operation 95 'ret' 'ret_ln141' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1ns.
+
+ <State 1>: 0.427ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('j', vec_vec_op_streaming.cpp:118) with incoming values : ('add_ln118', vec_vec_op_streaming.cpp:118) [45]  (0.427 ns)
+
+ <State 2>: 0.765ns
+The critical path consists of the following:
+	axis read on port 'vec1_V_data_V' [53]  (0 ns)
+	'add' operation ('add_ln126', vec_vec_op_streaming.cpp:126) [95]  (0.765 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

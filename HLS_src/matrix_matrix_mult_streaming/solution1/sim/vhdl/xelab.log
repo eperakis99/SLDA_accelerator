@@ -1,0 +1,318 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_matrix_matrix_mult_streaming_top glbl -prj matrix_matrix_mult_streaming.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s matrix_matrix_mult_streaming -debug wave 
+Multi-threading is on. Using 14 slave threads.
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_regslice_both.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_regslice_both'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_regslice_both_w1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_30.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_30'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_24s_25_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_24s_25_4_1_DSP48_9'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_24s_25_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_29.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_29'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_17.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_17'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_25.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_25'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_18.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_18'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_23.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_23'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_23s_24_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_23s_24_4_1_DSP48_8'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_23s_24_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_19.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_19'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_19.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_19'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_11.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_11'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_27.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_27'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_21s_22_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_21s_22_4_1_DSP48_6'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_21s_22_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_compute_biases_with_multiple_dot_products.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_compute_biases_with_multiple_dot_products'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_W_V_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_W_V_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_16s_17_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_16s_17_4_1_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_16s_17_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_26.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_26'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_W_V_0_memcore.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_W_V_0_memcore_ram'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_W_V_0_memcore'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_19s_20_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_19s_20_4_1_DSP48_4'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_19s_20_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_9'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_axi_s_feature_vector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_s_feature_vector'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_24.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_24'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_11.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_11'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_22.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_22'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_31.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_31'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_14.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_14'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_13.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_13'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_27.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_27'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_29.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_29'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_17s_17_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_17s_17_4_1_DSP48_1'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_17s_17_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_25.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_25'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_17s_18_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_17s_18_4_1_DSP48_2'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_17s_18_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_28.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_28'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_compute_weights_with_matrix_mult.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_compute_weights_with_matrix_mult'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_21.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_21'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_23.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_23'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_CTRL_BUS_s_axi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_CTRL_BUS_s_axi'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_17.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_17'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_21.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_21'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_12.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_12'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mul_8s_8s_16_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mul_8s_8s_16_1_1_Multiplier_0'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mul_8s_8s_16_1_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_16ns_16_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_16ns_16_4_1_DSP48_10'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_16ns_16_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_compute_scores.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_compute_scores'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_26.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_26'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_8'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_axi_slave_CTRL_BUS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_slave_CTRL_BUS'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_30.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_30'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_22s_23_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_22s_23_4_1_DSP48_7'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_22s_23_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_9'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_15.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_15'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_14.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_14'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_10'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_20.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_20'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_12.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_12'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_24.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_24'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_9s_16_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_9s_16_4_1_DSP48_11'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_9s_16_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_28.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_28'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_15.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_15'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_18.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_18'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_31.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_31'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_20.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_20'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_20s_21_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_20s_21_4_1_DSP48_5'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_20s_21_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_B_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_B_10'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_13.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_13'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/AESL_automem_A_22.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_A_22'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'apatb_matrix_matrix_mult_streaming_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/sim/vhdl/matrix_matrix_mult_streaming_mac_muladd_8s_8s_18s_19_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_18s_19_4_1_DSP48_3'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_matrix_mult_streaming_mac_muladd_8s_8s_18s_19_4_1'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling module work.glbl
+Compiling architecture behave of entity xil_defaultlib.matrix_matrix_mult_streaming_CTRL_BUS_s_axi [matrix_matrix_mult_streaming_ctr...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_mul_8s_8s_16_1_1_Multiplier_0 [matrix_matrix_mult_streaming_mul...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_mul_8s_8s_16_1_1 [\matrix_matrix_mult_streaming_mu...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_16s_17_4_1_DSP48_0 [matrix_matrix_mult_streaming_mac...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_16s_17_4_1 [\matrix_matrix_mult_streaming_ma...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_17s_17_4_1_DSP48_1 [matrix_matrix_mult_streaming_mac...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_17s_17_4_1 [\matrix_matrix_mult_streaming_ma...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_17s_18_4_1_DSP48_2 [matrix_matrix_mult_streaming_mac...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_17s_18_4_1 [\matrix_matrix_mult_streaming_ma...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_18s_19_4_1_DSP48_3 [matrix_matrix_mult_streaming_mac...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_18s_19_4_1 [\matrix_matrix_mult_streaming_ma...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_19s_20_4_1_DSP48_4 [matrix_matrix_mult_streaming_mac...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_19s_20_4_1 [\matrix_matrix_mult_streaming_ma...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_20s_21_4_1_DSP48_5 [matrix_matrix_mult_streaming_mac...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_20s_21_4_1 [\matrix_matrix_mult_streaming_ma...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_21s_22_4_1_DSP48_6 [matrix_matrix_mult_streaming_mac...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_21s_22_4_1 [\matrix_matrix_mult_streaming_ma...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_22s_23_4_1_DSP48_7 [matrix_matrix_mult_streaming_mac...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_22s_23_4_1 [\matrix_matrix_mult_streaming_ma...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_23s_24_4_1_DSP48_8 [matrix_matrix_mult_streaming_mac...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_23s_24_4_1 [\matrix_matrix_mult_streaming_ma...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_24s_25_4_1_DSP48_9 [matrix_matrix_mult_streaming_mac...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_mac_muladd_8s_8s_24s_25_4_1 [\matrix_matrix_mult_streaming_ma...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_compute_weights_with_matrix_mult [matrix_matrix_mult_streaming_com...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_compute_biases_with_multiple_dot_products [matrix_matrix_mult_streaming_com...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_regslice_both [\matrix_matrix_mult_streaming_re...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_regslice_both [\matrix_matrix_mult_streaming_re...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_regslice_both [\matrix_matrix_mult_streaming_re...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_regslice_both [\matrix_matrix_mult_streaming_re...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_regslice_both [\matrix_matrix_mult_streaming_re...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_regslice_both [\matrix_matrix_mult_streaming_re...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming_compute_scores [matrix_matrix_mult_streaming_com...]
+Compiling architecture rtl of entity xil_defaultlib.matrix_matrix_mult_streaming_W_V_0_memcore_ram [matrix_matrix_mult_streaming_w_v...]
+Compiling architecture arch of entity xil_defaultlib.matrix_matrix_mult_streaming_W_V_0_memcore [matrix_matrix_mult_streaming_w_v...]
+Compiling architecture rtl of entity xil_defaultlib.matrix_matrix_mult_streaming_W_V_0 [\matrix_matrix_mult_streaming_W_...]
+Compiling architecture behav of entity xil_defaultlib.matrix_matrix_mult_streaming [matrix_matrix_mult_streaming_def...]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_0 [aesl_automem_a_0_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_1 [aesl_automem_a_1_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_2 [aesl_automem_a_2_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_3 [aesl_automem_a_3_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_4 [aesl_automem_a_4_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_5 [aesl_automem_a_5_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_6 [aesl_automem_a_6_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_7 [aesl_automem_a_7_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_8 [aesl_automem_a_8_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_9 [aesl_automem_a_9_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_10 [aesl_automem_a_10_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_11 [aesl_automem_a_11_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_12 [aesl_automem_a_12_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_13 [aesl_automem_a_13_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_14 [aesl_automem_a_14_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_15 [aesl_automem_a_15_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_16 [aesl_automem_a_16_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_17 [aesl_automem_a_17_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_18 [aesl_automem_a_18_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_19 [aesl_automem_a_19_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_20 [aesl_automem_a_20_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_21 [aesl_automem_a_21_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_22 [aesl_automem_a_22_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_23 [aesl_automem_a_23_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_24 [aesl_automem_a_24_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_25 [aesl_automem_a_25_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_26 [aesl_automem_a_26_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_27 [aesl_automem_a_27_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_28 [aesl_automem_a_28_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_29 [aesl_automem_a_29_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_30 [aesl_automem_a_30_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_A_31 [aesl_automem_a_31_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_0 [aesl_automem_b_0_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_1 [aesl_automem_b_1_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_2 [aesl_automem_b_2_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_3 [aesl_automem_b_3_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_4 [aesl_automem_b_4_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_5 [aesl_automem_b_5_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_6 [aesl_automem_b_6_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_7 [aesl_automem_b_7_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_8 [aesl_automem_b_8_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_9 [aesl_automem_b_9_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_10 [aesl_automem_b_10_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_11 [aesl_automem_b_11_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_12 [aesl_automem_b_12_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_13 [aesl_automem_b_13_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_14 [aesl_automem_b_14_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_15 [aesl_automem_b_15_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_16 [aesl_automem_b_16_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_17 [aesl_automem_b_17_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_18 [aesl_automem_b_18_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_19 [aesl_automem_b_19_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_20 [aesl_automem_b_20_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_21 [aesl_automem_b_21_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_22 [aesl_automem_b_22_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_23 [aesl_automem_b_23_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_24 [aesl_automem_b_24_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_25 [aesl_automem_b_25_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_26 [aesl_automem_b_26_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_27 [aesl_automem_b_27_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_28 [aesl_automem_b_28_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_29 [aesl_automem_b_29_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_30 [aesl_automem_b_30_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_B_31 [aesl_automem_b_31_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_feature_vector [aesl_axi_s_feature_vector_defaul...]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_slave_CTRL_BUS [aesl_axi_slave_ctrl_bus_default]
+Compiling architecture behav of entity xil_defaultlib.apatb_matrix_matrix_mult_streami...
+Built simulation snapshot matrix_matrix_mult_streaming

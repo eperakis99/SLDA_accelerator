@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/manolis/HLS_code/SLDA_final/solution1/./sim/autowrap/testbench/SLDA_final.cpp_pre.cpp.tb.cpp

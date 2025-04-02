@@ -1,0 +1,826 @@
+
+
+================================================================
+== Vitis HLS Report for 'matrix_matrix_mult_streaming'
+================================================================
+* Date:           Tue May 30 21:49:49 2023
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        matrix_matrix_mult_streaming
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.062 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      421|      421|  4.210 us|  4.210 us|  422|  422|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------------+-------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                      |                                           |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                       Instance                       |                   Module                  |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +------------------------------------------------------+-------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_compute_weights_with_matrix_mult_fu_274           |compute_weights_with_matrix_mult           |      326|      326|  3.260 us|  3.260 us|  326|  326|     none|
+        |grp_compute_scores_fu_470                             |compute_scores                             |       75|       75|  0.750 us|  0.750 us|   75|   75|     none|
+        |grp_compute_biases_with_multiple_dot_products_fu_574  |compute_biases_with_multiple_dot_products  |       15|       15|  0.150 us|  0.150 us|   15|   15|     none|
+        +------------------------------------------------------+-------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|       2|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        8|   399|   21952|   59949|    -|
+|Memory           |        0|     -|    1600|     128|    -|
+|Multiplexer      |        -|     -|       -|    2519|    -|
+|Register         |        -|     -|    1290|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        8|   399|   24842|   62598|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |     1824|  2520|  548160|  274080|    0|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |       ~0|    15|       4|      22|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------------+-------------------------------------------+---------+-----+------+-------+-----+
+    |                       Instance                       |                   Module                  | BRAM_18K| DSP |  FF  |  LUT  | URAM|
+    +------------------------------------------------------+-------------------------------------------+---------+-----+------+-------+-----+
+    |CTRL_BUS_s_axi_U                                      |CTRL_BUS_s_axi                             |        0|    0|    36|     40|    0|
+    |grp_compute_biases_with_multiple_dot_products_fu_574  |compute_biases_with_multiple_dot_products  |        0|   79|  7606|  21663|    0|
+    |grp_compute_scores_fu_470                             |compute_scores                             |        8|   64|  5836|  21138|    0|
+    |grp_compute_weights_with_matrix_mult_fu_274           |compute_weights_with_matrix_mult           |        0|  256|  8474|  17108|    0|
+    +------------------------------------------------------+-------------------------------------------+---------+-----+------+-------+-----+
+    |Total                                                 |                                           |        8|  399| 21952|  59949|    0|
+    +------------------------------------------------------+-------------------------------------------+---------+-----+------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +----------+-------+---------+----+----+-----+------+-----+------+-------------+
+    |  Memory  | Module| BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------+-------+---------+----+----+-----+------+-----+------+-------------+
+    |W_V_0_U   |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_1_U   |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_2_U   |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_3_U   |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_4_U   |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_5_U   |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_6_U   |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_7_U   |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_8_U   |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_9_U   |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_10_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_11_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_12_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_13_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_14_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_15_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_16_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_17_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_18_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_19_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_20_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_21_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_22_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_23_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_24_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_25_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_26_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_27_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_28_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_29_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_30_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    |W_V_31_U  |W_V_0  |        0|  50|   4|    0|    10|   25|     1|          250|
+    +----------+-------+---------+----+----+-----+------+-----+------+-------------+
+    |Total     |       |        0|1600| 128|    0|   320|  800|    32|         8000|
+    +----------+-------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------+----+-----------+-----+-----------+
+    |                Name                | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------+----+-----------+-----+-----------+
+    |B_0_Addr_A                          |  14|          3|   32|         96|
+    |B_0_EN_A                            |  14|          3|    1|          3|
+    |B_10_Addr_A                         |  14|          3|   32|         96|
+    |B_10_EN_A                           |  14|          3|    1|          3|
+    |B_11_Addr_A                         |  14|          3|   32|         96|
+    |B_11_EN_A                           |  14|          3|    1|          3|
+    |B_12_Addr_A                         |  14|          3|   32|         96|
+    |B_12_EN_A                           |  14|          3|    1|          3|
+    |B_13_Addr_A                         |  14|          3|   32|         96|
+    |B_13_EN_A                           |  14|          3|    1|          3|
+    |B_14_Addr_A                         |  14|          3|   32|         96|
+    |B_14_EN_A                           |  14|          3|    1|          3|
+    |B_15_Addr_A                         |  14|          3|   32|         96|
+    |B_15_EN_A                           |  14|          3|    1|          3|
+    |B_16_Addr_A                         |  14|          3|   32|         96|
+    |B_16_EN_A                           |  14|          3|    1|          3|
+    |B_17_Addr_A                         |  14|          3|   32|         96|
+    |B_17_EN_A                           |  14|          3|    1|          3|
+    |B_18_Addr_A                         |  14|          3|   32|         96|
+    |B_18_EN_A                           |  14|          3|    1|          3|
+    |B_19_Addr_A                         |  14|          3|   32|         96|
+    |B_19_EN_A                           |  14|          3|    1|          3|
+    |B_1_Addr_A                          |  14|          3|   32|         96|
+    |B_1_EN_A                            |  14|          3|    1|          3|
+    |B_20_Addr_A                         |  14|          3|   32|         96|
+    |B_20_EN_A                           |  14|          3|    1|          3|
+    |B_21_Addr_A                         |  14|          3|   32|         96|
+    |B_21_EN_A                           |  14|          3|    1|          3|
+    |B_22_Addr_A                         |  14|          3|   32|         96|
+    |B_22_EN_A                           |  14|          3|    1|          3|
+    |B_23_Addr_A                         |  14|          3|   32|         96|
+    |B_23_EN_A                           |  14|          3|    1|          3|
+    |B_24_Addr_A                         |  14|          3|   32|         96|
+    |B_24_EN_A                           |  14|          3|    1|          3|
+    |B_25_Addr_A                         |  14|          3|   32|         96|
+    |B_25_EN_A                           |  14|          3|    1|          3|
+    |B_26_Addr_A                         |  14|          3|   32|         96|
+    |B_26_EN_A                           |  14|          3|    1|          3|
+    |B_27_Addr_A                         |  14|          3|   32|         96|
+    |B_27_EN_A                           |  14|          3|    1|          3|
+    |B_28_Addr_A                         |  14|          3|   32|         96|
+    |B_28_EN_A                           |  14|          3|    1|          3|
+    |B_29_Addr_A                         |  14|          3|   32|         96|
+    |B_29_EN_A                           |  14|          3|    1|          3|
+    |B_2_Addr_A                          |  14|          3|   32|         96|
+    |B_2_EN_A                            |  14|          3|    1|          3|
+    |B_30_Addr_A                         |  14|          3|   32|         96|
+    |B_30_EN_A                           |  14|          3|    1|          3|
+    |B_31_Addr_A                         |  14|          3|   32|         96|
+    |B_31_EN_A                           |  14|          3|    1|          3|
+    |B_3_Addr_A                          |  14|          3|   32|         96|
+    |B_3_EN_A                            |  14|          3|    1|          3|
+    |B_4_Addr_A                          |  14|          3|   32|         96|
+    |B_4_EN_A                            |  14|          3|    1|          3|
+    |B_5_Addr_A                          |  14|          3|   32|         96|
+    |B_5_EN_A                            |  14|          3|    1|          3|
+    |B_6_Addr_A                          |  14|          3|   32|         96|
+    |B_6_EN_A                            |  14|          3|    1|          3|
+    |B_7_Addr_A                          |  14|          3|   32|         96|
+    |B_7_EN_A                            |  14|          3|    1|          3|
+    |B_8_Addr_A                          |  14|          3|   32|         96|
+    |B_8_EN_A                            |  14|          3|    1|          3|
+    |B_9_Addr_A                          |  14|          3|   32|         96|
+    |B_9_EN_A                            |  14|          3|    1|          3|
+    |W_V_0_address0                      |  20|          4|    4|         16|
+    |W_V_0_ce0                           |  20|          4|    1|          4|
+    |W_V_0_we0                           |   9|          2|    1|          2|
+    |W_V_10_address0                     |  20|          4|    4|         16|
+    |W_V_10_ce0                          |  20|          4|    1|          4|
+    |W_V_10_we0                          |   9|          2|    1|          2|
+    |W_V_11_address0                     |  20|          4|    4|         16|
+    |W_V_11_ce0                          |  20|          4|    1|          4|
+    |W_V_11_we0                          |   9|          2|    1|          2|
+    |W_V_12_address0                     |  20|          4|    4|         16|
+    |W_V_12_ce0                          |  20|          4|    1|          4|
+    |W_V_12_we0                          |   9|          2|    1|          2|
+    |W_V_13_address0                     |  20|          4|    4|         16|
+    |W_V_13_ce0                          |  20|          4|    1|          4|
+    |W_V_13_we0                          |   9|          2|    1|          2|
+    |W_V_14_address0                     |  20|          4|    4|         16|
+    |W_V_14_ce0                          |  20|          4|    1|          4|
+    |W_V_14_we0                          |   9|          2|    1|          2|
+    |W_V_15_address0                     |  20|          4|    4|         16|
+    |W_V_15_ce0                          |  20|          4|    1|          4|
+    |W_V_15_we0                          |   9|          2|    1|          2|
+    |W_V_16_address0                     |  20|          4|    4|         16|
+    |W_V_16_ce0                          |  20|          4|    1|          4|
+    |W_V_16_we0                          |   9|          2|    1|          2|
+    |W_V_17_address0                     |  20|          4|    4|         16|
+    |W_V_17_ce0                          |  20|          4|    1|          4|
+    |W_V_17_we0                          |   9|          2|    1|          2|
+    |W_V_18_address0                     |  20|          4|    4|         16|
+    |W_V_18_ce0                          |  20|          4|    1|          4|
+    |W_V_18_we0                          |   9|          2|    1|          2|
+    |W_V_19_address0                     |  20|          4|    4|         16|
+    |W_V_19_ce0                          |  20|          4|    1|          4|
+    |W_V_19_we0                          |   9|          2|    1|          2|
+    |W_V_1_address0                      |  20|          4|    4|         16|
+    |W_V_1_ce0                           |  20|          4|    1|          4|
+    |W_V_1_we0                           |   9|          2|    1|          2|
+    |W_V_20_address0                     |  20|          4|    4|         16|
+    |W_V_20_ce0                          |  20|          4|    1|          4|
+    |W_V_20_we0                          |   9|          2|    1|          2|
+    |W_V_21_address0                     |  20|          4|    4|         16|
+    |W_V_21_ce0                          |  20|          4|    1|          4|
+    |W_V_21_we0                          |   9|          2|    1|          2|
+    |W_V_22_address0                     |  20|          4|    4|         16|
+    |W_V_22_ce0                          |  20|          4|    1|          4|
+    |W_V_22_we0                          |   9|          2|    1|          2|
+    |W_V_23_address0                     |  20|          4|    4|         16|
+    |W_V_23_ce0                          |  20|          4|    1|          4|
+    |W_V_23_we0                          |   9|          2|    1|          2|
+    |W_V_24_address0                     |  20|          4|    4|         16|
+    |W_V_24_ce0                          |  20|          4|    1|          4|
+    |W_V_24_we0                          |   9|          2|    1|          2|
+    |W_V_25_address0                     |  20|          4|    4|         16|
+    |W_V_25_ce0                          |  20|          4|    1|          4|
+    |W_V_25_we0                          |   9|          2|    1|          2|
+    |W_V_26_address0                     |  20|          4|    4|         16|
+    |W_V_26_ce0                          |  20|          4|    1|          4|
+    |W_V_26_we0                          |   9|          2|    1|          2|
+    |W_V_27_address0                     |  20|          4|    4|         16|
+    |W_V_27_ce0                          |  20|          4|    1|          4|
+    |W_V_27_we0                          |   9|          2|    1|          2|
+    |W_V_28_address0                     |  20|          4|    4|         16|
+    |W_V_28_ce0                          |  20|          4|    1|          4|
+    |W_V_28_we0                          |   9|          2|    1|          2|
+    |W_V_29_address0                     |  20|          4|    4|         16|
+    |W_V_29_ce0                          |  20|          4|    1|          4|
+    |W_V_29_we0                          |   9|          2|    1|          2|
+    |W_V_2_address0                      |  20|          4|    4|         16|
+    |W_V_2_ce0                           |  20|          4|    1|          4|
+    |W_V_2_we0                           |   9|          2|    1|          2|
+    |W_V_30_address0                     |  20|          4|    4|         16|
+    |W_V_30_ce0                          |  20|          4|    1|          4|
+    |W_V_30_we0                          |   9|          2|    1|          2|
+    |W_V_31_address0                     |  20|          4|    4|         16|
+    |W_V_31_ce0                          |  20|          4|    1|          4|
+    |W_V_31_we0                          |   9|          2|    1|          2|
+    |W_V_3_address0                      |  20|          4|    4|         16|
+    |W_V_3_ce0                           |  20|          4|    1|          4|
+    |W_V_3_we0                           |   9|          2|    1|          2|
+    |W_V_4_address0                      |  20|          4|    4|         16|
+    |W_V_4_ce0                           |  20|          4|    1|          4|
+    |W_V_4_we0                           |   9|          2|    1|          2|
+    |W_V_5_address0                      |  20|          4|    4|         16|
+    |W_V_5_ce0                           |  20|          4|    1|          4|
+    |W_V_5_we0                           |   9|          2|    1|          2|
+    |W_V_6_address0                      |  20|          4|    4|         16|
+    |W_V_6_ce0                           |  20|          4|    1|          4|
+    |W_V_6_we0                           |   9|          2|    1|          2|
+    |W_V_7_address0                      |  20|          4|    4|         16|
+    |W_V_7_ce0                           |  20|          4|    1|          4|
+    |W_V_7_we0                           |   9|          2|    1|          2|
+    |W_V_8_address0                      |  20|          4|    4|         16|
+    |W_V_8_ce0                           |  20|          4|    1|          4|
+    |W_V_8_we0                           |   9|          2|    1|          2|
+    |W_V_9_address0                      |  20|          4|    4|         16|
+    |W_V_9_ce0                           |  20|          4|    1|          4|
+    |W_V_9_we0                           |   9|          2|    1|          2|
+    |ap_NS_fsm                           |  37|          7|    1|          7|
+    |ap_done                             |   9|          2|    1|          2|
+    |feature_vector_TREADY_int_regslice  |   9|          2|    1|          2|
+    +------------------------------------+----+-----------+-----+-----------+
+    |Total                               |2519|        523| 1251|       3883|
+    +------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------------+-----+----+-----+-----------+
+    |                                Name                               |  FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------------------+-----+----+-----+-----------+
+    |ap_CS_fsm                                                          |    6|   0|    6|          0|
+    |ap_done_reg                                                        |    1|   0|    1|          0|
+    |b_V_0                                                              |  128|   0|  128|          0|
+    |b_V_1                                                              |  128|   0|  128|          0|
+    |b_V_2                                                              |  128|   0|  128|          0|
+    |b_V_3                                                              |  128|   0|  128|          0|
+    |b_V_4                                                              |  128|   0|  128|          0|
+    |b_V_5                                                              |  128|   0|  128|          0|
+    |b_V_6                                                              |  128|   0|  128|          0|
+    |b_V_7                                                              |  128|   0|  128|          0|
+    |b_V_8                                                              |  128|   0|  128|          0|
+    |b_V_9                                                              |  128|   0|  128|          0|
+    |grp_compute_biases_with_multiple_dot_products_fu_574_ap_start_reg  |    1|   0|    1|          0|
+    |grp_compute_scores_fu_470_ap_start_reg                             |    1|   0|    1|          0|
+    |grp_compute_weights_with_matrix_mult_fu_274_ap_start_reg           |    1|   0|    1|          0|
+    +-------------------------------------------------------------------+-----+----+-----+-----------+
+    |Total                                                              | 1290|   0| 1290|          0|
+    +-------------------------------------------------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+---------------+------------------------------+--------------+
+|        RTL Ports       | Dir | Bits|    Protocol   |         Source Object        |    C Type    |
++------------------------+-----+-----+---------------+------------------------------+--------------+
+|s_axi_CTRL_BUS_AWVALID  |   in|    1|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_AWREADY  |  out|    1|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_AWADDR   |   in|    4|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_WVALID   |   in|    1|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_WREADY   |  out|    1|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_WDATA    |   in|   32|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_WSTRB    |   in|    4|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_ARVALID  |   in|    1|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_ARREADY  |  out|    1|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_ARADDR   |   in|    4|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_RVALID   |  out|    1|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_RREADY   |   in|    1|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_RDATA    |  out|   32|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_RRESP    |  out|    2|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_BVALID   |  out|    1|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_BREADY   |   in|    1|          s_axi|                      CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_BRESP    |  out|    2|          s_axi|                      CTRL_BUS|   return void|
+|ap_clk                  |   in|    1|  ap_ctrl_chain|  matrix_matrix_mult_streaming|  return value|
+|ap_rst_n                |   in|    1|  ap_ctrl_chain|  matrix_matrix_mult_streaming|  return value|
+|interrupt               |  out|    1|  ap_ctrl_chain|  matrix_matrix_mult_streaming|  return value|
+|A_0_Addr_A              |  out|   32|           bram|                           A_0|         array|
+|A_0_EN_A                |  out|    1|           bram|                           A_0|         array|
+|A_0_WEN_A               |  out|   16|           bram|                           A_0|         array|
+|A_0_Din_A               |  out|  128|           bram|                           A_0|         array|
+|A_0_Dout_A              |   in|  128|           bram|                           A_0|         array|
+|A_0_Clk_A               |  out|    1|           bram|                           A_0|         array|
+|A_0_Rst_A               |  out|    1|           bram|                           A_0|         array|
+|A_1_Addr_A              |  out|   32|           bram|                           A_1|         array|
+|A_1_EN_A                |  out|    1|           bram|                           A_1|         array|
+|A_1_WEN_A               |  out|   16|           bram|                           A_1|         array|
+|A_1_Din_A               |  out|  128|           bram|                           A_1|         array|
+|A_1_Dout_A              |   in|  128|           bram|                           A_1|         array|
+|A_1_Clk_A               |  out|    1|           bram|                           A_1|         array|
+|A_1_Rst_A               |  out|    1|           bram|                           A_1|         array|
+|A_2_Addr_A              |  out|   32|           bram|                           A_2|         array|
+|A_2_EN_A                |  out|    1|           bram|                           A_2|         array|
+|A_2_WEN_A               |  out|   16|           bram|                           A_2|         array|
+|A_2_Din_A               |  out|  128|           bram|                           A_2|         array|
+|A_2_Dout_A              |   in|  128|           bram|                           A_2|         array|
+|A_2_Clk_A               |  out|    1|           bram|                           A_2|         array|
+|A_2_Rst_A               |  out|    1|           bram|                           A_2|         array|
+|A_3_Addr_A              |  out|   32|           bram|                           A_3|         array|
+|A_3_EN_A                |  out|    1|           bram|                           A_3|         array|
+|A_3_WEN_A               |  out|   16|           bram|                           A_3|         array|
+|A_3_Din_A               |  out|  128|           bram|                           A_3|         array|
+|A_3_Dout_A              |   in|  128|           bram|                           A_3|         array|
+|A_3_Clk_A               |  out|    1|           bram|                           A_3|         array|
+|A_3_Rst_A               |  out|    1|           bram|                           A_3|         array|
+|A_4_Addr_A              |  out|   32|           bram|                           A_4|         array|
+|A_4_EN_A                |  out|    1|           bram|                           A_4|         array|
+|A_4_WEN_A               |  out|   16|           bram|                           A_4|         array|
+|A_4_Din_A               |  out|  128|           bram|                           A_4|         array|
+|A_4_Dout_A              |   in|  128|           bram|                           A_4|         array|
+|A_4_Clk_A               |  out|    1|           bram|                           A_4|         array|
+|A_4_Rst_A               |  out|    1|           bram|                           A_4|         array|
+|A_5_Addr_A              |  out|   32|           bram|                           A_5|         array|
+|A_5_EN_A                |  out|    1|           bram|                           A_5|         array|
+|A_5_WEN_A               |  out|   16|           bram|                           A_5|         array|
+|A_5_Din_A               |  out|  128|           bram|                           A_5|         array|
+|A_5_Dout_A              |   in|  128|           bram|                           A_5|         array|
+|A_5_Clk_A               |  out|    1|           bram|                           A_5|         array|
+|A_5_Rst_A               |  out|    1|           bram|                           A_5|         array|
+|A_6_Addr_A              |  out|   32|           bram|                           A_6|         array|
+|A_6_EN_A                |  out|    1|           bram|                           A_6|         array|
+|A_6_WEN_A               |  out|   16|           bram|                           A_6|         array|
+|A_6_Din_A               |  out|  128|           bram|                           A_6|         array|
+|A_6_Dout_A              |   in|  128|           bram|                           A_6|         array|
+|A_6_Clk_A               |  out|    1|           bram|                           A_6|         array|
+|A_6_Rst_A               |  out|    1|           bram|                           A_6|         array|
+|A_7_Addr_A              |  out|   32|           bram|                           A_7|         array|
+|A_7_EN_A                |  out|    1|           bram|                           A_7|         array|
+|A_7_WEN_A               |  out|   16|           bram|                           A_7|         array|
+|A_7_Din_A               |  out|  128|           bram|                           A_7|         array|
+|A_7_Dout_A              |   in|  128|           bram|                           A_7|         array|
+|A_7_Clk_A               |  out|    1|           bram|                           A_7|         array|
+|A_7_Rst_A               |  out|    1|           bram|                           A_7|         array|
+|A_8_Addr_A              |  out|   32|           bram|                           A_8|         array|
+|A_8_EN_A                |  out|    1|           bram|                           A_8|         array|
+|A_8_WEN_A               |  out|   16|           bram|                           A_8|         array|
+|A_8_Din_A               |  out|  128|           bram|                           A_8|         array|
+|A_8_Dout_A              |   in|  128|           bram|                           A_8|         array|
+|A_8_Clk_A               |  out|    1|           bram|                           A_8|         array|
+|A_8_Rst_A               |  out|    1|           bram|                           A_8|         array|
+|A_9_Addr_A              |  out|   32|           bram|                           A_9|         array|
+|A_9_EN_A                |  out|    1|           bram|                           A_9|         array|
+|A_9_WEN_A               |  out|   16|           bram|                           A_9|         array|
+|A_9_Din_A               |  out|  128|           bram|                           A_9|         array|
+|A_9_Dout_A              |   in|  128|           bram|                           A_9|         array|
+|A_9_Clk_A               |  out|    1|           bram|                           A_9|         array|
+|A_9_Rst_A               |  out|    1|           bram|                           A_9|         array|
+|A_10_Addr_A             |  out|   32|           bram|                          A_10|         array|
+|A_10_EN_A               |  out|    1|           bram|                          A_10|         array|
+|A_10_WEN_A              |  out|   16|           bram|                          A_10|         array|
+|A_10_Din_A              |  out|  128|           bram|                          A_10|         array|
+|A_10_Dout_A             |   in|  128|           bram|                          A_10|         array|
+|A_10_Clk_A              |  out|    1|           bram|                          A_10|         array|
+|A_10_Rst_A              |  out|    1|           bram|                          A_10|         array|
+|A_11_Addr_A             |  out|   32|           bram|                          A_11|         array|
+|A_11_EN_A               |  out|    1|           bram|                          A_11|         array|
+|A_11_WEN_A              |  out|   16|           bram|                          A_11|         array|
+|A_11_Din_A              |  out|  128|           bram|                          A_11|         array|
+|A_11_Dout_A             |   in|  128|           bram|                          A_11|         array|
+|A_11_Clk_A              |  out|    1|           bram|                          A_11|         array|
+|A_11_Rst_A              |  out|    1|           bram|                          A_11|         array|
+|A_12_Addr_A             |  out|   32|           bram|                          A_12|         array|
+|A_12_EN_A               |  out|    1|           bram|                          A_12|         array|
+|A_12_WEN_A              |  out|   16|           bram|                          A_12|         array|
+|A_12_Din_A              |  out|  128|           bram|                          A_12|         array|
+|A_12_Dout_A             |   in|  128|           bram|                          A_12|         array|
+|A_12_Clk_A              |  out|    1|           bram|                          A_12|         array|
+|A_12_Rst_A              |  out|    1|           bram|                          A_12|         array|
+|A_13_Addr_A             |  out|   32|           bram|                          A_13|         array|
+|A_13_EN_A               |  out|    1|           bram|                          A_13|         array|
+|A_13_WEN_A              |  out|   16|           bram|                          A_13|         array|
+|A_13_Din_A              |  out|  128|           bram|                          A_13|         array|
+|A_13_Dout_A             |   in|  128|           bram|                          A_13|         array|
+|A_13_Clk_A              |  out|    1|           bram|                          A_13|         array|
+|A_13_Rst_A              |  out|    1|           bram|                          A_13|         array|
+|A_14_Addr_A             |  out|   32|           bram|                          A_14|         array|
+|A_14_EN_A               |  out|    1|           bram|                          A_14|         array|
+|A_14_WEN_A              |  out|   16|           bram|                          A_14|         array|
+|A_14_Din_A              |  out|  128|           bram|                          A_14|         array|
+|A_14_Dout_A             |   in|  128|           bram|                          A_14|         array|
+|A_14_Clk_A              |  out|    1|           bram|                          A_14|         array|
+|A_14_Rst_A              |  out|    1|           bram|                          A_14|         array|
+|A_15_Addr_A             |  out|   32|           bram|                          A_15|         array|
+|A_15_EN_A               |  out|    1|           bram|                          A_15|         array|
+|A_15_WEN_A              |  out|   16|           bram|                          A_15|         array|
+|A_15_Din_A              |  out|  128|           bram|                          A_15|         array|
+|A_15_Dout_A             |   in|  128|           bram|                          A_15|         array|
+|A_15_Clk_A              |  out|    1|           bram|                          A_15|         array|
+|A_15_Rst_A              |  out|    1|           bram|                          A_15|         array|
+|A_16_Addr_A             |  out|   32|           bram|                          A_16|         array|
+|A_16_EN_A               |  out|    1|           bram|                          A_16|         array|
+|A_16_WEN_A              |  out|   16|           bram|                          A_16|         array|
+|A_16_Din_A              |  out|  128|           bram|                          A_16|         array|
+|A_16_Dout_A             |   in|  128|           bram|                          A_16|         array|
+|A_16_Clk_A              |  out|    1|           bram|                          A_16|         array|
+|A_16_Rst_A              |  out|    1|           bram|                          A_16|         array|
+|A_17_Addr_A             |  out|   32|           bram|                          A_17|         array|
+|A_17_EN_A               |  out|    1|           bram|                          A_17|         array|
+|A_17_WEN_A              |  out|   16|           bram|                          A_17|         array|
+|A_17_Din_A              |  out|  128|           bram|                          A_17|         array|
+|A_17_Dout_A             |   in|  128|           bram|                          A_17|         array|
+|A_17_Clk_A              |  out|    1|           bram|                          A_17|         array|
+|A_17_Rst_A              |  out|    1|           bram|                          A_17|         array|
+|A_18_Addr_A             |  out|   32|           bram|                          A_18|         array|
+|A_18_EN_A               |  out|    1|           bram|                          A_18|         array|
+|A_18_WEN_A              |  out|   16|           bram|                          A_18|         array|
+|A_18_Din_A              |  out|  128|           bram|                          A_18|         array|
+|A_18_Dout_A             |   in|  128|           bram|                          A_18|         array|
+|A_18_Clk_A              |  out|    1|           bram|                          A_18|         array|
+|A_18_Rst_A              |  out|    1|           bram|                          A_18|         array|
+|A_19_Addr_A             |  out|   32|           bram|                          A_19|         array|
+|A_19_EN_A               |  out|    1|           bram|                          A_19|         array|
+|A_19_WEN_A              |  out|   16|           bram|                          A_19|         array|
+|A_19_Din_A              |  out|  128|           bram|                          A_19|         array|
+|A_19_Dout_A             |   in|  128|           bram|                          A_19|         array|
+|A_19_Clk_A              |  out|    1|           bram|                          A_19|         array|
+|A_19_Rst_A              |  out|    1|           bram|                          A_19|         array|
+|A_20_Addr_A             |  out|   32|           bram|                          A_20|         array|
+|A_20_EN_A               |  out|    1|           bram|                          A_20|         array|
+|A_20_WEN_A              |  out|   16|           bram|                          A_20|         array|
+|A_20_Din_A              |  out|  128|           bram|                          A_20|         array|
+|A_20_Dout_A             |   in|  128|           bram|                          A_20|         array|
+|A_20_Clk_A              |  out|    1|           bram|                          A_20|         array|
+|A_20_Rst_A              |  out|    1|           bram|                          A_20|         array|
+|A_21_Addr_A             |  out|   32|           bram|                          A_21|         array|
+|A_21_EN_A               |  out|    1|           bram|                          A_21|         array|
+|A_21_WEN_A              |  out|   16|           bram|                          A_21|         array|
+|A_21_Din_A              |  out|  128|           bram|                          A_21|         array|
+|A_21_Dout_A             |   in|  128|           bram|                          A_21|         array|
+|A_21_Clk_A              |  out|    1|           bram|                          A_21|         array|
+|A_21_Rst_A              |  out|    1|           bram|                          A_21|         array|
+|A_22_Addr_A             |  out|   32|           bram|                          A_22|         array|
+|A_22_EN_A               |  out|    1|           bram|                          A_22|         array|
+|A_22_WEN_A              |  out|   16|           bram|                          A_22|         array|
+|A_22_Din_A              |  out|  128|           bram|                          A_22|         array|
+|A_22_Dout_A             |   in|  128|           bram|                          A_22|         array|
+|A_22_Clk_A              |  out|    1|           bram|                          A_22|         array|
+|A_22_Rst_A              |  out|    1|           bram|                          A_22|         array|
+|A_23_Addr_A             |  out|   32|           bram|                          A_23|         array|
+|A_23_EN_A               |  out|    1|           bram|                          A_23|         array|
+|A_23_WEN_A              |  out|   16|           bram|                          A_23|         array|
+|A_23_Din_A              |  out|  128|           bram|                          A_23|         array|
+|A_23_Dout_A             |   in|  128|           bram|                          A_23|         array|
+|A_23_Clk_A              |  out|    1|           bram|                          A_23|         array|
+|A_23_Rst_A              |  out|    1|           bram|                          A_23|         array|
+|A_24_Addr_A             |  out|   32|           bram|                          A_24|         array|
+|A_24_EN_A               |  out|    1|           bram|                          A_24|         array|
+|A_24_WEN_A              |  out|   16|           bram|                          A_24|         array|
+|A_24_Din_A              |  out|  128|           bram|                          A_24|         array|
+|A_24_Dout_A             |   in|  128|           bram|                          A_24|         array|
+|A_24_Clk_A              |  out|    1|           bram|                          A_24|         array|
+|A_24_Rst_A              |  out|    1|           bram|                          A_24|         array|
+|A_25_Addr_A             |  out|   32|           bram|                          A_25|         array|
+|A_25_EN_A               |  out|    1|           bram|                          A_25|         array|
+|A_25_WEN_A              |  out|   16|           bram|                          A_25|         array|
+|A_25_Din_A              |  out|  128|           bram|                          A_25|         array|
+|A_25_Dout_A             |   in|  128|           bram|                          A_25|         array|
+|A_25_Clk_A              |  out|    1|           bram|                          A_25|         array|
+|A_25_Rst_A              |  out|    1|           bram|                          A_25|         array|
+|A_26_Addr_A             |  out|   32|           bram|                          A_26|         array|
+|A_26_EN_A               |  out|    1|           bram|                          A_26|         array|
+|A_26_WEN_A              |  out|   16|           bram|                          A_26|         array|
+|A_26_Din_A              |  out|  128|           bram|                          A_26|         array|
+|A_26_Dout_A             |   in|  128|           bram|                          A_26|         array|
+|A_26_Clk_A              |  out|    1|           bram|                          A_26|         array|
+|A_26_Rst_A              |  out|    1|           bram|                          A_26|         array|
+|A_27_Addr_A             |  out|   32|           bram|                          A_27|         array|
+|A_27_EN_A               |  out|    1|           bram|                          A_27|         array|
+|A_27_WEN_A              |  out|   16|           bram|                          A_27|         array|
+|A_27_Din_A              |  out|  128|           bram|                          A_27|         array|
+|A_27_Dout_A             |   in|  128|           bram|                          A_27|         array|
+|A_27_Clk_A              |  out|    1|           bram|                          A_27|         array|
+|A_27_Rst_A              |  out|    1|           bram|                          A_27|         array|
+|A_28_Addr_A             |  out|   32|           bram|                          A_28|         array|
+|A_28_EN_A               |  out|    1|           bram|                          A_28|         array|
+|A_28_WEN_A              |  out|   16|           bram|                          A_28|         array|
+|A_28_Din_A              |  out|  128|           bram|                          A_28|         array|
+|A_28_Dout_A             |   in|  128|           bram|                          A_28|         array|
+|A_28_Clk_A              |  out|    1|           bram|                          A_28|         array|
+|A_28_Rst_A              |  out|    1|           bram|                          A_28|         array|
+|A_29_Addr_A             |  out|   32|           bram|                          A_29|         array|
+|A_29_EN_A               |  out|    1|           bram|                          A_29|         array|
+|A_29_WEN_A              |  out|   16|           bram|                          A_29|         array|
+|A_29_Din_A              |  out|  128|           bram|                          A_29|         array|
+|A_29_Dout_A             |   in|  128|           bram|                          A_29|         array|
+|A_29_Clk_A              |  out|    1|           bram|                          A_29|         array|
+|A_29_Rst_A              |  out|    1|           bram|                          A_29|         array|
+|A_30_Addr_A             |  out|   32|           bram|                          A_30|         array|
+|A_30_EN_A               |  out|    1|           bram|                          A_30|         array|
+|A_30_WEN_A              |  out|   16|           bram|                          A_30|         array|
+|A_30_Din_A              |  out|  128|           bram|                          A_30|         array|
+|A_30_Dout_A             |   in|  128|           bram|                          A_30|         array|
+|A_30_Clk_A              |  out|    1|           bram|                          A_30|         array|
+|A_30_Rst_A              |  out|    1|           bram|                          A_30|         array|
+|A_31_Addr_A             |  out|   32|           bram|                          A_31|         array|
+|A_31_EN_A               |  out|    1|           bram|                          A_31|         array|
+|A_31_WEN_A              |  out|   16|           bram|                          A_31|         array|
+|A_31_Din_A              |  out|  128|           bram|                          A_31|         array|
+|A_31_Dout_A             |   in|  128|           bram|                          A_31|         array|
+|A_31_Clk_A              |  out|    1|           bram|                          A_31|         array|
+|A_31_Rst_A              |  out|    1|           bram|                          A_31|         array|
+|B_0_Addr_A              |  out|   32|           bram|                           B_0|         array|
+|B_0_EN_A                |  out|    1|           bram|                           B_0|         array|
+|B_0_WEN_A               |  out|   16|           bram|                           B_0|         array|
+|B_0_Din_A               |  out|  128|           bram|                           B_0|         array|
+|B_0_Dout_A              |   in|  128|           bram|                           B_0|         array|
+|B_0_Clk_A               |  out|    1|           bram|                           B_0|         array|
+|B_0_Rst_A               |  out|    1|           bram|                           B_0|         array|
+|B_1_Addr_A              |  out|   32|           bram|                           B_1|         array|
+|B_1_EN_A                |  out|    1|           bram|                           B_1|         array|
+|B_1_WEN_A               |  out|   16|           bram|                           B_1|         array|
+|B_1_Din_A               |  out|  128|           bram|                           B_1|         array|
+|B_1_Dout_A              |   in|  128|           bram|                           B_1|         array|
+|B_1_Clk_A               |  out|    1|           bram|                           B_1|         array|
+|B_1_Rst_A               |  out|    1|           bram|                           B_1|         array|
+|B_2_Addr_A              |  out|   32|           bram|                           B_2|         array|
+|B_2_EN_A                |  out|    1|           bram|                           B_2|         array|
+|B_2_WEN_A               |  out|   16|           bram|                           B_2|         array|
+|B_2_Din_A               |  out|  128|           bram|                           B_2|         array|
+|B_2_Dout_A              |   in|  128|           bram|                           B_2|         array|
+|B_2_Clk_A               |  out|    1|           bram|                           B_2|         array|
+|B_2_Rst_A               |  out|    1|           bram|                           B_2|         array|
+|B_3_Addr_A              |  out|   32|           bram|                           B_3|         array|
+|B_3_EN_A                |  out|    1|           bram|                           B_3|         array|
+|B_3_WEN_A               |  out|   16|           bram|                           B_3|         array|
+|B_3_Din_A               |  out|  128|           bram|                           B_3|         array|
+|B_3_Dout_A              |   in|  128|           bram|                           B_3|         array|
+|B_3_Clk_A               |  out|    1|           bram|                           B_3|         array|
+|B_3_Rst_A               |  out|    1|           bram|                           B_3|         array|
+|B_4_Addr_A              |  out|   32|           bram|                           B_4|         array|
+|B_4_EN_A                |  out|    1|           bram|                           B_4|         array|
+|B_4_WEN_A               |  out|   16|           bram|                           B_4|         array|
+|B_4_Din_A               |  out|  128|           bram|                           B_4|         array|
+|B_4_Dout_A              |   in|  128|           bram|                           B_4|         array|
+|B_4_Clk_A               |  out|    1|           bram|                           B_4|         array|
+|B_4_Rst_A               |  out|    1|           bram|                           B_4|         array|
+|B_5_Addr_A              |  out|   32|           bram|                           B_5|         array|
+|B_5_EN_A                |  out|    1|           bram|                           B_5|         array|
+|B_5_WEN_A               |  out|   16|           bram|                           B_5|         array|
+|B_5_Din_A               |  out|  128|           bram|                           B_5|         array|
+|B_5_Dout_A              |   in|  128|           bram|                           B_5|         array|
+|B_5_Clk_A               |  out|    1|           bram|                           B_5|         array|
+|B_5_Rst_A               |  out|    1|           bram|                           B_5|         array|
+|B_6_Addr_A              |  out|   32|           bram|                           B_6|         array|
+|B_6_EN_A                |  out|    1|           bram|                           B_6|         array|
+|B_6_WEN_A               |  out|   16|           bram|                           B_6|         array|
+|B_6_Din_A               |  out|  128|           bram|                           B_6|         array|
+|B_6_Dout_A              |   in|  128|           bram|                           B_6|         array|
+|B_6_Clk_A               |  out|    1|           bram|                           B_6|         array|
+|B_6_Rst_A               |  out|    1|           bram|                           B_6|         array|
+|B_7_Addr_A              |  out|   32|           bram|                           B_7|         array|
+|B_7_EN_A                |  out|    1|           bram|                           B_7|         array|
+|B_7_WEN_A               |  out|   16|           bram|                           B_7|         array|
+|B_7_Din_A               |  out|  128|           bram|                           B_7|         array|
+|B_7_Dout_A              |   in|  128|           bram|                           B_7|         array|
+|B_7_Clk_A               |  out|    1|           bram|                           B_7|         array|
+|B_7_Rst_A               |  out|    1|           bram|                           B_7|         array|
+|B_8_Addr_A              |  out|   32|           bram|                           B_8|         array|
+|B_8_EN_A                |  out|    1|           bram|                           B_8|         array|
+|B_8_WEN_A               |  out|   16|           bram|                           B_8|         array|
+|B_8_Din_A               |  out|  128|           bram|                           B_8|         array|
+|B_8_Dout_A              |   in|  128|           bram|                           B_8|         array|
+|B_8_Clk_A               |  out|    1|           bram|                           B_8|         array|
+|B_8_Rst_A               |  out|    1|           bram|                           B_8|         array|
+|B_9_Addr_A              |  out|   32|           bram|                           B_9|         array|
+|B_9_EN_A                |  out|    1|           bram|                           B_9|         array|
+|B_9_WEN_A               |  out|   16|           bram|                           B_9|         array|
+|B_9_Din_A               |  out|  128|           bram|                           B_9|         array|
+|B_9_Dout_A              |   in|  128|           bram|                           B_9|         array|
+|B_9_Clk_A               |  out|    1|           bram|                           B_9|         array|
+|B_9_Rst_A               |  out|    1|           bram|                           B_9|         array|
+|B_10_Addr_A             |  out|   32|           bram|                          B_10|         array|
+|B_10_EN_A               |  out|    1|           bram|                          B_10|         array|
+|B_10_WEN_A              |  out|   16|           bram|                          B_10|         array|
+|B_10_Din_A              |  out|  128|           bram|                          B_10|         array|
+|B_10_Dout_A             |   in|  128|           bram|                          B_10|         array|
+|B_10_Clk_A              |  out|    1|           bram|                          B_10|         array|
+|B_10_Rst_A              |  out|    1|           bram|                          B_10|         array|
+|B_11_Addr_A             |  out|   32|           bram|                          B_11|         array|
+|B_11_EN_A               |  out|    1|           bram|                          B_11|         array|
+|B_11_WEN_A              |  out|   16|           bram|                          B_11|         array|
+|B_11_Din_A              |  out|  128|           bram|                          B_11|         array|
+|B_11_Dout_A             |   in|  128|           bram|                          B_11|         array|
+|B_11_Clk_A              |  out|    1|           bram|                          B_11|         array|
+|B_11_Rst_A              |  out|    1|           bram|                          B_11|         array|
+|B_12_Addr_A             |  out|   32|           bram|                          B_12|         array|
+|B_12_EN_A               |  out|    1|           bram|                          B_12|         array|
+|B_12_WEN_A              |  out|   16|           bram|                          B_12|         array|
+|B_12_Din_A              |  out|  128|           bram|                          B_12|         array|
+|B_12_Dout_A             |   in|  128|           bram|                          B_12|         array|
+|B_12_Clk_A              |  out|    1|           bram|                          B_12|         array|
+|B_12_Rst_A              |  out|    1|           bram|                          B_12|         array|
+|B_13_Addr_A             |  out|   32|           bram|                          B_13|         array|
+|B_13_EN_A               |  out|    1|           bram|                          B_13|         array|
+|B_13_WEN_A              |  out|   16|           bram|                          B_13|         array|
+|B_13_Din_A              |  out|  128|           bram|                          B_13|         array|
+|B_13_Dout_A             |   in|  128|           bram|                          B_13|         array|
+|B_13_Clk_A              |  out|    1|           bram|                          B_13|         array|
+|B_13_Rst_A              |  out|    1|           bram|                          B_13|         array|
+|B_14_Addr_A             |  out|   32|           bram|                          B_14|         array|
+|B_14_EN_A               |  out|    1|           bram|                          B_14|         array|
+|B_14_WEN_A              |  out|   16|           bram|                          B_14|         array|
+|B_14_Din_A              |  out|  128|           bram|                          B_14|         array|
+|B_14_Dout_A             |   in|  128|           bram|                          B_14|         array|
+|B_14_Clk_A              |  out|    1|           bram|                          B_14|         array|
+|B_14_Rst_A              |  out|    1|           bram|                          B_14|         array|
+|B_15_Addr_A             |  out|   32|           bram|                          B_15|         array|
+|B_15_EN_A               |  out|    1|           bram|                          B_15|         array|
+|B_15_WEN_A              |  out|   16|           bram|                          B_15|         array|
+|B_15_Din_A              |  out|  128|           bram|                          B_15|         array|
+|B_15_Dout_A             |   in|  128|           bram|                          B_15|         array|
+|B_15_Clk_A              |  out|    1|           bram|                          B_15|         array|
+|B_15_Rst_A              |  out|    1|           bram|                          B_15|         array|
+|B_16_Addr_A             |  out|   32|           bram|                          B_16|         array|
+|B_16_EN_A               |  out|    1|           bram|                          B_16|         array|
+|B_16_WEN_A              |  out|   16|           bram|                          B_16|         array|
+|B_16_Din_A              |  out|  128|           bram|                          B_16|         array|
+|B_16_Dout_A             |   in|  128|           bram|                          B_16|         array|
+|B_16_Clk_A              |  out|    1|           bram|                          B_16|         array|
+|B_16_Rst_A              |  out|    1|           bram|                          B_16|         array|
+|B_17_Addr_A             |  out|   32|           bram|                          B_17|         array|
+|B_17_EN_A               |  out|    1|           bram|                          B_17|         array|
+|B_17_WEN_A              |  out|   16|           bram|                          B_17|         array|
+|B_17_Din_A              |  out|  128|           bram|                          B_17|         array|
+|B_17_Dout_A             |   in|  128|           bram|                          B_17|         array|
+|B_17_Clk_A              |  out|    1|           bram|                          B_17|         array|
+|B_17_Rst_A              |  out|    1|           bram|                          B_17|         array|
+|B_18_Addr_A             |  out|   32|           bram|                          B_18|         array|
+|B_18_EN_A               |  out|    1|           bram|                          B_18|         array|
+|B_18_WEN_A              |  out|   16|           bram|                          B_18|         array|
+|B_18_Din_A              |  out|  128|           bram|                          B_18|         array|
+|B_18_Dout_A             |   in|  128|           bram|                          B_18|         array|
+|B_18_Clk_A              |  out|    1|           bram|                          B_18|         array|
+|B_18_Rst_A              |  out|    1|           bram|                          B_18|         array|
+|B_19_Addr_A             |  out|   32|           bram|                          B_19|         array|
+|B_19_EN_A               |  out|    1|           bram|                          B_19|         array|
+|B_19_WEN_A              |  out|   16|           bram|                          B_19|         array|
+|B_19_Din_A              |  out|  128|           bram|                          B_19|         array|
+|B_19_Dout_A             |   in|  128|           bram|                          B_19|         array|
+|B_19_Clk_A              |  out|    1|           bram|                          B_19|         array|
+|B_19_Rst_A              |  out|    1|           bram|                          B_19|         array|
+|B_20_Addr_A             |  out|   32|           bram|                          B_20|         array|
+|B_20_EN_A               |  out|    1|           bram|                          B_20|         array|
+|B_20_WEN_A              |  out|   16|           bram|                          B_20|         array|
+|B_20_Din_A              |  out|  128|           bram|                          B_20|         array|
+|B_20_Dout_A             |   in|  128|           bram|                          B_20|         array|
+|B_20_Clk_A              |  out|    1|           bram|                          B_20|         array|
+|B_20_Rst_A              |  out|    1|           bram|                          B_20|         array|
+|B_21_Addr_A             |  out|   32|           bram|                          B_21|         array|
+|B_21_EN_A               |  out|    1|           bram|                          B_21|         array|
+|B_21_WEN_A              |  out|   16|           bram|                          B_21|         array|
+|B_21_Din_A              |  out|  128|           bram|                          B_21|         array|
+|B_21_Dout_A             |   in|  128|           bram|                          B_21|         array|
+|B_21_Clk_A              |  out|    1|           bram|                          B_21|         array|
+|B_21_Rst_A              |  out|    1|           bram|                          B_21|         array|
+|B_22_Addr_A             |  out|   32|           bram|                          B_22|         array|
+|B_22_EN_A               |  out|    1|           bram|                          B_22|         array|
+|B_22_WEN_A              |  out|   16|           bram|                          B_22|         array|
+|B_22_Din_A              |  out|  128|           bram|                          B_22|         array|
+|B_22_Dout_A             |   in|  128|           bram|                          B_22|         array|
+|B_22_Clk_A              |  out|    1|           bram|                          B_22|         array|
+|B_22_Rst_A              |  out|    1|           bram|                          B_22|         array|
+|B_23_Addr_A             |  out|   32|           bram|                          B_23|         array|
+|B_23_EN_A               |  out|    1|           bram|                          B_23|         array|
+|B_23_WEN_A              |  out|   16|           bram|                          B_23|         array|
+|B_23_Din_A              |  out|  128|           bram|                          B_23|         array|
+|B_23_Dout_A             |   in|  128|           bram|                          B_23|         array|
+|B_23_Clk_A              |  out|    1|           bram|                          B_23|         array|
+|B_23_Rst_A              |  out|    1|           bram|                          B_23|         array|
+|B_24_Addr_A             |  out|   32|           bram|                          B_24|         array|
+|B_24_EN_A               |  out|    1|           bram|                          B_24|         array|
+|B_24_WEN_A              |  out|   16|           bram|                          B_24|         array|
+|B_24_Din_A              |  out|  128|           bram|                          B_24|         array|
+|B_24_Dout_A             |   in|  128|           bram|                          B_24|         array|
+|B_24_Clk_A              |  out|    1|           bram|                          B_24|         array|
+|B_24_Rst_A              |  out|    1|           bram|                          B_24|         array|
+|B_25_Addr_A             |  out|   32|           bram|                          B_25|         array|
+|B_25_EN_A               |  out|    1|           bram|                          B_25|         array|
+|B_25_WEN_A              |  out|   16|           bram|                          B_25|         array|
+|B_25_Din_A              |  out|  128|           bram|                          B_25|         array|
+|B_25_Dout_A             |   in|  128|           bram|                          B_25|         array|
+|B_25_Clk_A              |  out|    1|           bram|                          B_25|         array|
+|B_25_Rst_A              |  out|    1|           bram|                          B_25|         array|
+|B_26_Addr_A             |  out|   32|           bram|                          B_26|         array|
+|B_26_EN_A               |  out|    1|           bram|                          B_26|         array|
+|B_26_WEN_A              |  out|   16|           bram|                          B_26|         array|
+|B_26_Din_A              |  out|  128|           bram|                          B_26|         array|
+|B_26_Dout_A             |   in|  128|           bram|                          B_26|         array|
+|B_26_Clk_A              |  out|    1|           bram|                          B_26|         array|
+|B_26_Rst_A              |  out|    1|           bram|                          B_26|         array|
+|B_27_Addr_A             |  out|   32|           bram|                          B_27|         array|
+|B_27_EN_A               |  out|    1|           bram|                          B_27|         array|
+|B_27_WEN_A              |  out|   16|           bram|                          B_27|         array|
+|B_27_Din_A              |  out|  128|           bram|                          B_27|         array|
+|B_27_Dout_A             |   in|  128|           bram|                          B_27|         array|
+|B_27_Clk_A              |  out|    1|           bram|                          B_27|         array|
+|B_27_Rst_A              |  out|    1|           bram|                          B_27|         array|
+|B_28_Addr_A             |  out|   32|           bram|                          B_28|         array|
+|B_28_EN_A               |  out|    1|           bram|                          B_28|         array|
+|B_28_WEN_A              |  out|   16|           bram|                          B_28|         array|
+|B_28_Din_A              |  out|  128|           bram|                          B_28|         array|
+|B_28_Dout_A             |   in|  128|           bram|                          B_28|         array|
+|B_28_Clk_A              |  out|    1|           bram|                          B_28|         array|
+|B_28_Rst_A              |  out|    1|           bram|                          B_28|         array|
+|B_29_Addr_A             |  out|   32|           bram|                          B_29|         array|
+|B_29_EN_A               |  out|    1|           bram|                          B_29|         array|
+|B_29_WEN_A              |  out|   16|           bram|                          B_29|         array|
+|B_29_Din_A              |  out|  128|           bram|                          B_29|         array|
+|B_29_Dout_A             |   in|  128|           bram|                          B_29|         array|
+|B_29_Clk_A              |  out|    1|           bram|                          B_29|         array|
+|B_29_Rst_A              |  out|    1|           bram|                          B_29|         array|
+|B_30_Addr_A             |  out|   32|           bram|                          B_30|         array|
+|B_30_EN_A               |  out|    1|           bram|                          B_30|         array|
+|B_30_WEN_A              |  out|   16|           bram|                          B_30|         array|
+|B_30_Din_A              |  out|  128|           bram|                          B_30|         array|
+|B_30_Dout_A             |   in|  128|           bram|                          B_30|         array|
+|B_30_Clk_A              |  out|    1|           bram|                          B_30|         array|
+|B_30_Rst_A              |  out|    1|           bram|                          B_30|         array|
+|B_31_Addr_A             |  out|   32|           bram|                          B_31|         array|
+|B_31_EN_A               |  out|    1|           bram|                          B_31|         array|
+|B_31_WEN_A              |  out|   16|           bram|                          B_31|         array|
+|B_31_Din_A              |  out|  128|           bram|                          B_31|         array|
+|B_31_Dout_A             |   in|  128|           bram|                          B_31|         array|
+|B_31_Clk_A              |  out|    1|           bram|                          B_31|         array|
+|B_31_Rst_A              |  out|    1|           bram|                          B_31|         array|
+|feature_vector_TDATA    |   in|  128|           axis|       feature_vector_V_data_V|       pointer|
+|feature_vector_TVALID   |   in|    1|           axis|       feature_vector_V_dest_V|       pointer|
+|feature_vector_TREADY   |  out|    1|           axis|       feature_vector_V_dest_V|       pointer|
+|feature_vector_TDEST    |   in|    6|           axis|       feature_vector_V_dest_V|       pointer|
+|feature_vector_TKEEP    |   in|   16|           axis|       feature_vector_V_keep_V|       pointer|
+|feature_vector_TSTRB    |   in|   16|           axis|       feature_vector_V_strb_V|       pointer|
+|feature_vector_TUSER    |   in|    2|           axis|       feature_vector_V_user_V|       pointer|
+|feature_vector_TLAST    |   in|    1|           axis|       feature_vector_V_last_V|       pointer|
+|feature_vector_TID      |   in|    5|           axis|         feature_vector_V_id_V|       pointer|
+|scores_address0         |  out|    4|      ap_memory|                        scores|         array|
+|scores_ce0              |  out|    1|      ap_memory|                        scores|         array|
+|scores_we0              |  out|    1|      ap_memory|                        scores|         array|
+|scores_d0               |  out|  128|      ap_memory|                        scores|         array|
++------------------------+-----+-----+---------------+------------------------------+--------------+
+

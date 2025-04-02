@@ -1,0 +1,10 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="matrix_matrix_mult_streaming" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="matrix_matrix_mult_streaming"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

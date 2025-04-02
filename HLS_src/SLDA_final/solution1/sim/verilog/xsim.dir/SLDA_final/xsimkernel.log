@@ -1,0 +1,7 @@
+Running: xsim.dir/SLDA_final/xsimk -simmode gui -wdb SLDA_final.wdb -simrunnum 0 -socket 49721
+Design successfully loaded
+Design Loading Memory Usage: 60588 KB (Peak: 60720 KB)
+Design Loading CPU Usage: 70 ms
+Simulation completed
+Simulation Memory Usage: 165460 KB (Peak: 199856 KB)
+Simulation CPU Usage: 5810 ms

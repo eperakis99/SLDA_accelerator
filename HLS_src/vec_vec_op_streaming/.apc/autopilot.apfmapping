@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="vec_vec_op_streaming.cpp" path="/home/manolis/HLS_code/vec_vec_op_streaming.cpp"/>
+    <originFiles name="vec_vec_op_streaming.h" path="/home/manolis/HLS_code/vec_vec_op_streaming.h"/>
+  </source>
+  <testbench>
+    <originFiles name="vec_vec_op_streaming_tb.cpp" path="/home/manolis/HLS_code/vec_vec_op_streaming_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,199 @@
+
+
+================================================================
+== Vitis HLS Report for 'vec_vec_op_streaming'
+================================================================
+* Date:           Wed May  3 16:43:49 2023
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        vec_vec_op_streaming
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.292 ns|     1.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        7|       36|  70.000 ns|  0.360 us|    8|   37|     none|
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------+-----------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                            |                 |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |          Instance          |      Module     |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +----------------------------+-----------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_vector_scale_fu_92      |vector_scale     |       34|       34|   0.340 us|   0.340 us|   34|   34|     none|
+        |grp_vector_subtract_fu_124  |vector_subtract  |       34|       34|   0.340 us|   0.340 us|   34|   34|     none|
+        |grp_vector_add_fu_170       |vector_add       |       34|       34|   0.340 us|   0.340 us|   34|   34|     none|
+        |grp_vector_add2_fu_216      |vector_add2      |        5|        5|  50.000 ns|  50.000 ns|    5|    5|     none|
+        +----------------------------+-----------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|       8|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        0|     -|     774|    2522|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|     274|    -|
+|Register         |        -|     -|      15|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     789|    2804|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |     1824|  2520|  548160|  274080|    0|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|       1|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+-----------------+---------+----+-----+-----+-----+
+    |          Instance          |      Module     | BRAM_18K| DSP|  FF | LUT | URAM|
+    +----------------------------+-----------------+---------+----+-----+-----+-----+
+    |BUS_A_s_axi_U               |BUS_A_s_axi      |        0|   0|   50|   56|    0|
+    |grp_vector_add_fu_170       |vector_add       |        0|   0|  186|  712|    0|
+    |grp_vector_add2_fu_216      |vector_add2      |        0|   0|  182|  339|    0|
+    |grp_vector_scale_fu_92      |vector_scale     |        0|   0|  170|  703|    0|
+    |grp_vector_subtract_fu_124  |vector_subtract  |        0|   0|  186|  712|    0|
+    +----------------------------+-----------------+---------+----+-----+-----+-----+
+    |Total                       |                 |        0|   0|  774| 2522|    0|
+    +----------------------------+-----------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |             Variable Name             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |ap_condition_261                       |       and|   0|  0|   2|           1|           1|
+    |ap_condition_436                       |       and|   0|  0|   2|           1|           1|
+    |grp_vector_add2_fu_216_vec_out_TREADY  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state2_on_subcall_done        |        or|   0|  0|   2|           1|           1|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                  |          |   0|  0|   8|           4|           4|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  20|          4|    1|          4|
+    |vec1_TREADY_int_regslice     |  26|          5|    1|          5|
+    |vec2_TREADY_int_regslice     |  20|          4|    1|          4|
+    |vec_out_TDATA_int_regslice   |  26|          5|  128|        640|
+    |vec_out_TDEST_int_regslice   |  26|          5|    6|         30|
+    |vec_out_TID_int_regslice     |  26|          5|    5|         25|
+    |vec_out_TKEEP_int_regslice   |  26|          5|   16|         80|
+    |vec_out_TLAST_int_regslice   |  26|          5|    1|          5|
+    |vec_out_TSTRB_int_regslice   |  26|          5|   16|         80|
+    |vec_out_TUSER_int_regslice   |  26|          5|    2|         10|
+    |vec_out_TVALID_int_regslice  |  26|          5|    1|          5|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 274|         53|  178|        888|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------+---+----+-----+-----------+
+    |                   Name                  | FF| LUT| Bits| Const Bits|
+    +-----------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                |  3|   0|    3|          0|
+    |grp_vector_add2_fu_216_ap_start_reg      |  1|   0|    1|          0|
+    |grp_vector_add_fu_170_ap_start_reg       |  1|   0|    1|          0|
+    |grp_vector_scale_fu_92_ap_start_reg      |  1|   0|    1|          0|
+    |grp_vector_subtract_fu_124_ap_start_reg  |  1|   0|    1|          0|
+    |op_read_reg_262                          |  8|   0|    8|          0|
+    +-----------------------------------------+---+----+-----+-----------+
+    |Total                                    | 15|   0|   15|          0|
+    +-----------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+----------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++---------------------+-----+-----+------------+----------------------+--------------+
+|s_axi_BUS_A_AWVALID  |   in|    1|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_AWREADY  |  out|    1|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_AWADDR   |   in|    5|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_WVALID   |   in|    1|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_WREADY   |  out|    1|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_WDATA    |   in|   32|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_WSTRB    |   in|    4|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_ARVALID  |   in|    1|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_ARREADY  |  out|    1|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_ARADDR   |   in|    5|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_RVALID   |  out|    1|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_RREADY   |   in|    1|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_RDATA    |  out|   32|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_RRESP    |  out|    2|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_BVALID   |  out|    1|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_BREADY   |   in|    1|       s_axi|                 BUS_A|        scalar|
+|s_axi_BUS_A_BRESP    |  out|    2|       s_axi|                 BUS_A|        scalar|
+|ap_clk               |   in|    1|  ap_ctrl_hs|  vec_vec_op_streaming|  return value|
+|ap_rst_n             |   in|    1|  ap_ctrl_hs|  vec_vec_op_streaming|  return value|
+|interrupt            |  out|    1|  ap_ctrl_hs|  vec_vec_op_streaming|  return value|
+|vec1_TDATA           |   in|  128|        axis|         vec1_V_data_V|       pointer|
+|vec1_TVALID          |   in|    1|        axis|         vec1_V_dest_V|       pointer|
+|vec1_TREADY          |  out|    1|        axis|         vec1_V_dest_V|       pointer|
+|vec1_TDEST           |   in|    6|        axis|         vec1_V_dest_V|       pointer|
+|vec1_TKEEP           |   in|   16|        axis|         vec1_V_keep_V|       pointer|
+|vec1_TSTRB           |   in|   16|        axis|         vec1_V_strb_V|       pointer|
+|vec1_TUSER           |   in|    2|        axis|         vec1_V_user_V|       pointer|
+|vec1_TLAST           |   in|    1|        axis|         vec1_V_last_V|       pointer|
+|vec1_TID             |   in|    5|        axis|           vec1_V_id_V|       pointer|
+|vec2_TDATA           |   in|  128|        axis|         vec2_V_data_V|       pointer|
+|vec2_TVALID          |   in|    1|        axis|         vec2_V_dest_V|       pointer|
+|vec2_TREADY          |  out|    1|        axis|         vec2_V_dest_V|       pointer|
+|vec2_TDEST           |   in|    6|        axis|         vec2_V_dest_V|       pointer|
+|vec2_TKEEP           |   in|   16|        axis|         vec2_V_keep_V|       pointer|
+|vec2_TSTRB           |   in|   16|        axis|         vec2_V_strb_V|       pointer|
+|vec2_TUSER           |   in|    2|        axis|         vec2_V_user_V|       pointer|
+|vec2_TLAST           |   in|    1|        axis|         vec2_V_last_V|       pointer|
+|vec2_TID             |   in|    5|        axis|           vec2_V_id_V|       pointer|
+|vec_out_TDATA        |  out|  128|        axis|      vec_out_V_data_V|       pointer|
+|vec_out_TVALID       |  out|    1|        axis|      vec_out_V_dest_V|       pointer|
+|vec_out_TREADY       |   in|    1|        axis|      vec_out_V_dest_V|       pointer|
+|vec_out_TDEST        |  out|    6|        axis|      vec_out_V_dest_V|       pointer|
+|vec_out_TKEEP        |  out|   16|        axis|      vec_out_V_keep_V|       pointer|
+|vec_out_TSTRB        |  out|   16|        axis|      vec_out_V_strb_V|       pointer|
+|vec_out_TUSER        |  out|    2|        axis|      vec_out_V_user_V|       pointer|
+|vec_out_TLAST        |  out|    1|        axis|      vec_out_V_last_V|       pointer|
+|vec_out_TID          |  out|    5|        axis|        vec_out_V_id_V|       pointer|
++---------------------+-----+-----+------------+----------------------+--------------+
+

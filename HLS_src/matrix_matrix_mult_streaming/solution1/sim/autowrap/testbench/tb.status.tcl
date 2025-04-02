@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/manolis/HLS_code/matrix_matrix_mult_streaming/solution1/./sim/autowrap/testbench/matrix_matrix_mult_streaming.cpp_pre.cpp.tb.cpp

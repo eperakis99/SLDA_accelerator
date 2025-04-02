@@ -1,0 +1,29 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "vec_vec_op_streaming",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "vec_vec_op_streaming"
+              }]
+          }
+        },
+        {
+          "functionName": "vec_vec_op_streaming",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "vec_vec_op_streaming"
+              }]
+          }
+        }
+      ]
+    }]}

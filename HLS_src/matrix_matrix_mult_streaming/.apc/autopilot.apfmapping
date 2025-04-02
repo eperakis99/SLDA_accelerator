@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="matrix_matrix_mult_streaming.h" path="/home/manolis/HLS_code/matrix_matrix_mult_streaming.h"/>
+    <originFiles name="matrix_matrix_mult_streaming.cpp" path="/home/manolis/HLS_code/matrix_matrix_mult_streaming.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="matrix_matrix_mult_streaming_tb.cpp" path="/home/manolis/HLS_code/matrix_matrix_mult_streaming_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

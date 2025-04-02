@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Feb  8 19:25:03 2023
+# Process ID: 11473
+# Current directory: /home/manolis/HLS_code/vec_vec_op_streaming/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /home/manolis/HLS_code/vec_vec_op_streaming/solution1/sim/verilog/xsim.dir/vec_vec_op_streaming/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/manolis/HLS_code/vec_vec_op_streaming/solution1/sim/verilog/webtalk.log
+# Journal file: /home/manolis/HLS_code/vec_vec_op_streaming/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/manolis/HLS_code/vec_vec_op_streaming/solution1/sim/verilog/xsim.dir/vec_vec_op_streaming/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="SLDA_final.cpp" path="/home/manolis/HLS_code/SLDA_final.cpp"/>
+    <originFiles name="SLDA_final.h" path="/home/manolis/HLS_code/SLDA_final.h"/>
+    <originFiles name="mat_vec_mult_streaming.cpp" path="/home/manolis/HLS_code/mat_vec_mult_streaming.cpp"/>
+    <originFiles name="mat_vec_mult_streaming.h" path="/home/manolis/HLS_code/mat_vec_mult_streaming.h"/>
+    <originFiles name="matrix_matrix_mult_streaming.cpp" path="/home/manolis/HLS_code/matrix_matrix_mult_streaming.cpp"/>
+    <originFiles name="matrix_matrix_mult_streaming.h" path="/home/manolis/HLS_code/matrix_matrix_mult_streaming.h"/>
+    <originFiles name="training_module.cpp" path="/home/manolis/HLS_code/training_module.cpp"/>
+    <originFiles name="training_module.h" path="/home/manolis/HLS_code/training_module.h"/>
+    <originFiles name="vec_vec_op_streaming.cpp" path="/home/manolis/HLS_code/vec_vec_op_streaming.cpp"/>
+    <originFiles name="vec_vec_op_streaming.h" path="/home/manolis/HLS_code/vec_vec_op_streaming.h"/>
+  </source>
+  <testbench>
+    <originFiles name="SLDA_final_tb.cpp" path="/home/manolis/HLS_code/SLDA_final_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

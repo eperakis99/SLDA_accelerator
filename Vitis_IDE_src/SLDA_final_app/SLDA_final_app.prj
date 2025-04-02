@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="SLDA_final_app" location="/home/manolis/workspace/SLDA_final_app" platform="/home/manolis/workspace/SLDA_final/export/SLDA_final/SLDA_final.xpfm" platformUID="xilinx:zcu102::0.0(custom)" systemProject="SLDA_final_app_system" sysConfig="SLDA_final" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" language="CPP" mssSignature="853484eb16d74aa9aa4b5b9b4d87169f">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.2022558564">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1115044972" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

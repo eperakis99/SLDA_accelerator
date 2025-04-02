@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/manolis/HLS_code/vec_vec_op_streaming/solution1/./sim/autowrap/testbench/vec_vec_op_streaming.cpp_pre.cpp.tb.cpp

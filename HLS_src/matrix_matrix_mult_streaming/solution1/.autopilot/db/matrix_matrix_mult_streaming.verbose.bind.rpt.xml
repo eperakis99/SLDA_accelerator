@@ -1,0 +1,48 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'matrix_matrix_mult_streaming'" level="0">
+<item name = "Date">Tue May 30 21:47:20 2023
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
+<item name = "Project">matrix_matrix_mult_streaming</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.062 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">421, 421, 4.210 us, 4.210 us, 422, 422, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_compute_weights_with_matrix_mult_fu_274">compute_weights_with_matrix_mult, 326, 326, 3.260 us, 3.260 us, 326, 326, none</column>
+<column name="grp_compute_scores_fu_470">compute_scores, 75, 75, 0.750 us, 0.750 us, 75, 75, none</column>
+<column name="grp_compute_biases_with_multiple_dot_products_fu_574">compute_biases_with_multiple_dot_products, 15, 15, 0.150 us, 0.150 us, 15, 15, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

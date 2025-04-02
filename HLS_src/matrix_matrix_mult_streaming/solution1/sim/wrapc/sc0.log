@@ -1,0 +1,7 @@
+   Build using "/tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling matrix_matrix_mult_streaming_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_matrix_matrix_mult_streaming_util.cpp
+   Compiling apatb_matrix_matrix_mult_streaming.cpp
+   Compiling matrix_matrix_mult_streaming.cpp_pre.cpp.tb.cpp
+   Compiling apatb_matrix_matrix_mult_streaming_ir.ll
+   Generating cosim.tv.exe

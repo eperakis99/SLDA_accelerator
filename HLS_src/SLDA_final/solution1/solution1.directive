@@ -1,0 +1,35 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="SLDA_final" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="SLDA_final"/>
+            </pragma>
+        </directive>
+        <directive functionName="SLDA_final" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="SLDA_final"/>
+            </pragma>
+        </directive>
+        <directive functionName="SLDA_final" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="SLDA_final"/>
+            </pragma>
+        </directive>
+        <directive functionName="SLDA_final" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="SLDA_final"/>
+            </pragma>
+        </directive>
+        <directive functionName="SLDA_final" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="SLDA_final"/>
+            </pragma>
+        </directive>
+        <directive functionName="SLDA_final" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="SLDA_final"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

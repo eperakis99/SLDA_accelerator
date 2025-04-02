@@ -1,0 +1,48 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../matrix_matrix_mult_streaming.cpp in debug mode
+   Generating csim.exe
+4962
+9124
+-1323
+3285
+92
+4878
+12329
+15641
+-2764
+12509
+-11484
+-7864
+-14558
+-19654
+-15760
+-19137
+-20536
+-14425
+17197
+29253
+4962
+9124
+-1323
+3285
+92
+4878
+12329
+15641
+-2764
+12509
+-11484
+-7864
+-14558
+-19654
+-15760
+-19137
+-20536
+-14425
+17197
+29253
+Test passed!
+The maximum depth reached by any of the 1 hls::stream() instances in the design is 64
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
